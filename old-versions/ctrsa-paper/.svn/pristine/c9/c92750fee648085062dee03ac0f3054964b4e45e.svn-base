@@ -1,0 +1,52 @@
+\documentclass[sigconf,anonymous]{acmart}
+\usepackage{epstopdf}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage[toc,section=chapter]{glossaries}
+\usepackage{acronym}
+\usepackage{yfonts}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{pdfpages}
+\usepackage{mwe}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[ruled, vlined, linesnumbered,algo2e,]{algorithm2e}
+\usepackage{booktabs}
+\usepackage[font=small,labelfont=bf,justification=centering]{caption}
+\usepackage{tikz-timing}
+\usetikztiminglibrary[rising arrows]{clockarrows}
+\usetikzlibrary{positioning}
+\settopmatter{printacmref=false} 
+
+\acmConference[DAC'19]{ACM/IEEE Design Automation Conference}{June 2-6, 2019}{Las Vegas, NV, USA}
+
+\usepackage{etoolbox}
+\patchcmd{\quote}{\rightmargin}{\leftmargin 2em \rightmargin}{}{}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+
+\begin{document}
+
+\title{Optimised Lattice-Based Key Encapsulation in Hardware\\ OR\\ Optimising LWE in Hardware for FrodoKEM}
+
+\author{}
+
+\input{abstract}
+
+\maketitle
+\input{intro}
+\input{related-works.tex}
+\input{design.tex}
+\input{results.tex}
+\input{conclusions.tex}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography}
+
+\end{document}

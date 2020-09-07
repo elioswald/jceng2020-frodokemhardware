@@ -1,0 +1,172 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BFM{\etalchar{+}}18b}
+
+\bibitem[ACZ18]{amiet2018fpga}
+Dorian Amiet, Andreas Curiger, and Paul Zbinden.
+\newblock {FPGA-based Accelerator for Post-Quantum Signature Scheme
+  SPHINCS-256}.
+\newblock {\em IACR Transactions on Cryptographic Hardware and Embedded
+  Systems}, pages 18--39, 2018.
+
+\bibitem[BCD{\etalchar{+}}16]{frodoccs}
+Joppe~W. Bos, Craig Costello, L{\'{e}}o Ducas, Ilya Mironov, Michael Naehrig,
+  Valeria Nikolaenko, Ananth Raghunathan, and Douglas Stebila.
+\newblock Frodo: Take off the ring! practical, quantum-secure key exchange from
+  {LWE}.
+\newblock In {\em Proceedings of the 2016 {ACM} {SIGSAC} Conference on Computer
+  and Communications Security, Vienna, Austria, October 24-28, 2016}, pages
+  1006--1018, 2016.
+
+\bibitem[BDP{\etalchar{+}}12]{bertoni2012keccak}
+Guido Bertoni, Joan Daemen, Michael Peeters, Gilles Van~Assche, and Ronny
+  Van~Keer.
+\newblock Keccak implementation overview.
+\newblock {\em URL: http://keccak. neokeon. org/Keccak-implementation-3.2.
+  pdf}, 2012.
+
+\bibitem[BFM{\etalchar{+}}18a]{bos2018assessing}
+Joppe~W Bos, Simon Friedberger, Marco Martinoli, Elisabeth Oswald, and Martijn
+  Stam.
+\newblock Assessing the feasibility of single trace power analysis of frodo.
+\newblock In {\em International Conference on Selected Areas in Cryptography},
+  pages 216--234. Springer, 2018.
+
+\bibitem[BFM{\etalchar{+}}18b]{cryptoeprint:2018:1116}
+Joppe~W. Bos, Simon Friedberger, Marco Martinoli, Elisabeth Oswald, and Martijn
+  Stam.
+\newblock Fly, you fool! faster frodo for the arm cortex-m4.
+\newblock Cryptology ePrint Archive, Report 2018/1116, 2018.
+\newblock \url{https://eprint.iacr.org/2018/1116}.
+
+\bibitem[BHK{\etalchar{+}}19]{cryptoeprint:2019:1086}
+Daniel~J. Bernstein, Andreas Hülsing, Stefan Kölbl, Ruben Niederhagen, Joost
+  Rijneveld, and Peter Schwabe.
+\newblock The sphincs+ signature framework.
+\newblock Cryptology ePrint Archive, Report 2019/1086, 2019.
+\newblock \url{https://eprint.iacr.org/2019/1086}.
+
+\bibitem[DCP08]{de2008trivium}
+Christophe De~Canniere and Bart Preneel.
+\newblock Trivium.
+\newblock In {\em New Stream Cipher Designs}, pages 244--266. Springer, 2008.
+
+\bibitem[HKR{\etalchar{+}}18]{howe2018practical}
+James Howe, Ayesha Khalid, Ciara Rafferty, Francesco Regazzoni, and M{\'a}ire
+  O'Neill.
+\newblock On practical discrete gaussian samplers for lattice-based
+  cryptography.
+\newblock {\em IEEE Transactions on Computers}, 67(3):322--334, 2018.
+
+\bibitem[HMO{\etalchar{+}}16]{howe2016lattice}
+James Howe, Ciara Moore, M{\'a}ire O'Neill, Francesco Regazzoni, Tim
+  G{\"u}neysu, and Kevin Beeden.
+\newblock Lattice-based encryption over standard lattices in hardware.
+\newblock In {\em Proceedings of the 53rd Annual Design Automation Conference},
+  page 162. ACM, 2016.
+
+\bibitem[HOKG18]{howe2018standard}
+James Howe, Tobias Oder, Markus Krausz, and Tim G{\"u}neysu.
+\newblock Standard lattice-based key encapsulation on embedded devices.
+\newblock {\em IACR Transactions on Cryptographic Hardware and Embedded
+  Systems}, pages 372--393, 2018.
+
+\bibitem[ISO12]{ISO}
+{Information technology — Security techniques — Lightweight cryptography
+  — Part 3: Stream ciphers}.
+\newblock Standard, International Organization for Standardization, Geneva, CH,
+  2012.
+
+\bibitem[KAK18]{koziel2018high}
+Brian Koziel, Reza Azarderakhsh, and Mehran~Mozaffari Kermani.
+\newblock A high-performance and scalable hardware architecture for
+  isogeny-based cryptography.
+\newblock {\em IEEE Transactions on Computers}, 67(11):1594--1609, 2018.
+
+\bibitem[KLC{\etalchar{+}}17]{cryptoeprint:2017:690}
+Po-Chun Kuo, Wen-Ding Li, Yu-Wei Chen, Yuan-Che Hsu, Bo-Yuan Peng, Chen-Mou
+  Cheng, and Bo-Yin Yang.
+\newblock High performance post-quantum key exchange on {FPGAs}.
+\newblock Cryptology ePrint Archive, Report 2017/690, 2017.
+\newblock \url{https://eprint.iacr.org/2017/690}.
+
+\bibitem[KRSS19]{pqm4}
+Matthias~J. Kannwischer, Joost Rijneveld, Peter Schwabe, and Ko~Stoffelen.
+\newblock {pqm4: Testing and Benchmarking NIST PQC on ARM Cortex-M4}.
+\newblock NIST's Second PQC Standardization Conference, 2019.
+\newblock \url{https://eprint.iacr.org/2019/844}.
+
+\bibitem[NAB{\etalchar{+}}17]{frodokem}
+Michael Naehrig, Erdem Alkim, Joppe Bos, Leo Ducas, Karen Easterbrook, Brian
+  LaMacchia, Patrick Longa, Ilya Mironov, Valeria Nikolaenko, Christopher
+  Peikert, Ananth Raghunathan, and Douglas Stebila.
+\newblock Frodokem.
+\newblock Technical report, {N}ational {I}nstitute of {S}tandards and
+  {T}echnology, 2017.
+\newblock available at
+  \url{https://csrc.nist.gov/projects/post-quantum-cryptography/round-1-submissions}.
+
+\bibitem[NIS16a]{nistpq}
+NIST.
+\newblock Post-quantum crypto project.
+\newblock \url{http://csrc.nist.gov/groups/ST/post-quantum-crypto/}, 2016.
+
+\bibitem[NIS16b]{nistsca}
+NIST.
+\newblock Submission requirements and evaluation criteria for the post-quantum
+  cryptography standardization process.
+\newblock
+  \url{https://csrc.nist.gov/csrc/media/projects/post-quantum-cryptography/documents/call-for-proposals-final-dec-2016.pdf},
+  2016.
+
+\bibitem[OG17]{oder2017implementing}
+Tobias Oder and Tim G{\"u}neysu.
+\newblock Implementing the {NewHope}-simple key exchange on low-cost {FPGAs}.
+\newblock {\em Progress in Cryptology--LATINCRYPT}, 2017, 2017.
+
+\bibitem[PDG14]{DBLP:conf/ches/PoppelmannDG14}
+Thomas P{\"{o}}ppelmann, L{\'{e}}o Ducas, and Tim G{\"{u}}neysu.
+\newblock Enhanced lattice-based signatures on reconfigurable hardware.
+\newblock In Lejla Batina and Matthew Robshaw, editors, {\em {CHES} 2014},
+  volume 8731 of {\em Lecture Notes in Computer Science}, pages 353--370.
+  Springer, 2014.
+
+\bibitem[Reg05]{Regev05}
+Oded Regev.
+\newblock On lattices, learning with errors, random linear codes, and
+  cryptography.
+\newblock In {\em Proceedings of the 37th Annual {ACM} Symposium on Theory of
+  Computing, Baltimore, MD, USA, May 22-24, 2005}, pages 84--93, 2005.
+
+\bibitem[RM19]{cryptoeprint:2019:568}
+Debapriya~Basu Roy and Debdeep Mukhopadhyay.
+\newblock {Post Quantum ECC on FPGA Platform}.
+\newblock Cryptology ePrint Archive, Report 2019/568, 2019.
+\newblock \url{https://eprint.iacr.org/2019/568}.
+
+\bibitem[RVM{\etalchar{+}}14]{roy2014compact}
+Sujoy~Sinha Roy, Frederik Vercauteren, Nele Mentens, Donald~Donglong Chen, and
+  Ingrid Verbauwhede.
+\newblock Compact ring-lwe cryptoprocessor.
+\newblock In {\em International Workshop on Cryptographic Hardware and Embedded
+  Systems}, pages 371--391. Springer, 2014.
+
+\bibitem[Saa19]{cryptoeprint:2019:685}
+Markku-Juhani~O. Saarinen.
+\newblock Exploring nist lwc/pqc synergy with r5sneik: How sneik 1.1 algorithms
+  were designed to support round5.
+\newblock Cryptology ePrint Archive, Report 2019/685, 2019.
+\newblock \url{https://eprint.iacr.org/2019/685}.
+
+\bibitem[Sho97]{Shor}
+Peter~W. Shor.
+\newblock Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer.
+\newblock {\em SIAM J. Comput.}, 26(5):1484--1509, October 1997.
+
+\bibitem[WSN18]{wang2018fpga}
+Wen Wang, Jakub Szefer, and Ruben Niederhagen.
+\newblock {FPGA-based Niederreiter cryptosystem using binary Goppa codes}.
+\newblock In {\em International Conference on Post-Quantum Cryptography}, pages
+  77--98. Springer, 2018.
+
+\end{thebibliography}

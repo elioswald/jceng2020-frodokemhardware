@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+\begin{axis}[
+    ybar stacked,
+	bar width=15pt,
+	nodes near coords,
+    enlargelimits=0.15,
+    legend style={at={(0.5,-0.20)},
+      anchor=north,legend columns=-1},
+    ylabel={Number of FPGA Slices},
+    symbolic x coords={1xMult-640, 4xMult-640, 8xMult-640, 16xMult-640, 
+1xMult-976, 4xMult-976, 8xMult-976, 16xMult-976
+		},
+    xtick=data,
+    x tick label style={rotate=45,anchor=east},
+    ]
+\addplot+[ybar] plot coordinates {(1xMult-640,290) (4xMult-640,355) 
+  (8xMult-640,532) (16xMult-640,855) (1xMult-976,290) (4xMult-976,355) 
+  (8xMult-976,532) (16xMult-976,855)};
+\addplot+[ybar] plot coordinates {(1xMult-640,1180) (4xMult-640,1338) 
+  (8xMult-640,1485) (16xMult-640,1692) (1xMult-976,290) (4xMult-976,355) 
+  (8xMult-976,532) (16xMult-976,855)};
+\addplot+[ybar] plot coordinates {(1xMult-640,532) (4xMult-640,991)
+  (8xMult-640,992) (16xMult-640,993) (1xMult-976,290) (4xMult-976,355) 
+  (8xMult-976,532) (16xMult-976,855)};
+%\addplot+[ybar] plot coordinates {(1xMult-640,855) (4xMult-640,991) 
+%  (8xMult-640,992) (16xMult-640,993) (1xMult-976,290) (4xMult-976,355) 
+%  (8xMult-976,532) (16xMult-976,855)};
+\legend{\strut KeyGen, \strut Encaps, \strut Decaps}
+\end{axis}
+\end{tikzpicture}

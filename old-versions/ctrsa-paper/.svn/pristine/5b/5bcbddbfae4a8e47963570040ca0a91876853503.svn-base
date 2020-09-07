@@ -1,0 +1,7 @@
+\section{Introduction} \label{sec:Introdution}
+
+The future development of a scalable quantum computer will allow us to solve in polynomial time several problems which are considered intractable for classical computers. If certainly fields, such as biology and physics would certainly benefit from this ``quantum speed up''~\cite{}, security would be put in danger. The security of our current public key infrastructure is based on the computational hardness of the integer factorization problem and of the discrete logarithm problem. These problems, however, will be solved in polynomial time by a machine capable of executing the Shor's algorithm~\cite{}.
+
+To promptly react to the threat, the scientific community stated to study, propose, and implement public key algorithms, to be deployed on classical computers, but  based on problems hard to be solved also by quantum computational power. This effort is supported by governmental and standardization agencies, which are pushing for new and quantum resistant algorithms.
+
+REMOVE RANDOM REFERENCE~\cite{mceliece1978public}

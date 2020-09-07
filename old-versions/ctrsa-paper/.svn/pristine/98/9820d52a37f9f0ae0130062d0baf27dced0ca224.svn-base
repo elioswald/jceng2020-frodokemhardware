@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bibliography.bib
+A bad cross reference---entry "Regev05"
+refers to entry "DBLP:conf/stoc/2005", which doesn't exist
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "nist"
+Warning--I didn't find a database entry for "DBLP:conf/stoc/2005"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in frodoccs
+Warning--empty address in frodoccs
+Warning--empty address in de2008trivium
+Warning--no number and no volume in howe2018standard
+Warning--empty publisher in Regev05
+Warning--empty address in Regev05
+You've used 9 entries,
+            5795 wiz_defined-function locations,
+            1369 strings with 17616 characters,
+and the built_in function-call counts, 10718 in all, are:
+= -- 1213
+> -- 509
+< -- 0
++ -- 171
+- -- 175
+* -- 837
+:= -- 1214
+add.period$ -- 49
+call.type$ -- 9
+change.case$ -- 76
+chr.to.int$ -- 7
+cite$ -- 15
+duplicate$ -- 870
+empty$ -- 614
+format.name$ -- 198
+if$ -- 2429
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 19
+newline$ -- 116
+num.names$ -- 70
+pop$ -- 321
+preamble$ -- 1
+purify$ -- 152
+quote$ -- 0
+skip$ -- 317
+stack$ -- 0
+substring$ -- 740
+swap$ -- 86
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 233
+warning$ -- 6
+while$ -- 66
+width$ -- 0
+write$ -- 200
+(There was 1 error message)

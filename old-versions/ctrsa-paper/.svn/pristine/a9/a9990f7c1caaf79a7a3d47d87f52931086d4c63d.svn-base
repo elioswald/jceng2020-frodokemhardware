@@ -1,0 +1,1987 @@
+@inproceedings{ GOPS13,
+  author        = {Tim G\"uneysu and Tobias Oder and Thomas P\"oppelmann and Peter Schwabe},
+  title         = {Software speed records for lattice-based signatures},
+  booktitle     = {Post-Quantum Cryptography},
+  editor        = {Philippe Gaborit},
+  series        = {Lecture Notes in Computer Science},
+  volume        = {7932},
+  publisher     = {Springer-Verlag Berlin Heidelberg},
+  year          = {2013},
+  pages         = {67--82},
+  note          = {Document ID: d67aa537a6de60813845a45505c313, \url{http://cryptojedi.org/papers/\#lattisigns}}
+}
+
+@inproceedings{frodoccs,
+  author    = {Joppe W. Bos and
+               Craig Costello and
+               L{\'{e}}o Ducas and
+               Ilya Mironov and
+               Michael Naehrig and
+               Valeria Nikolaenko and
+               Ananth Raghunathan and
+               Douglas Stebila},
+  title     = {Frodo: Take off the Ring! Practical, Quantum-Secure Key Exchange from
+               {LWE}},
+  booktitle = {Proceedings of the 2016 {ACM} {SIGSAC} Conference on Computer and
+               Communications Security, Vienna, Austria, October 24-28, 2016},
+  pages     = {1006--1018},
+  year      = {2016}
+}
+
+@techreport{frodokem,
+  author       = {Michael Naehrig and Erdem Alkim and Joppe Bos and Leo Ducas and Karen Easterbrook and Brian LaMacchia and Patrick Longa and Ilya Mironov and Valeria Nikolaenko and Christopher Peikert and Ananth Raghunathan and Douglas Stebila},
+  title        = {FrodoKEM},
+  institution  = {{N}ational {I}nstitute of {S}tandards and {T}echnology},
+  year         = 2017,
+  note         = {available at \url{https://csrc.nist.gov/projects/post-quantum-cryptography/round-1-submissions}},
+}
+
+@incollection{de2008trivium,
+  title={Trivium},
+  author={De Canniere, Christophe and Preneel, Bart},
+  booktitle={New Stream Cipher Designs},
+  pages={244--266},
+  year={2008},
+  publisher={Springer}
+}
+
+@misc{nistpq,
+	title = {Post-Quantum Crypto Project},
+	author={NIST},
+	year = {2016},
+	howpublished = {\url{http://csrc.nist.gov/groups/ST/post-quantum-crypto/}},
+}
+
+
+@misc{cryptoeprint:2018:1116,
+    author = {Joppe W. Bos and Simon Friedberger and Marco Martinoli and Elisabeth Oswald and Martijn Stam},
+    title = {Fly, you fool! Faster Frodo for the ARM Cortex-M4},
+    howpublished = {Cryptology ePrint Archive, Report 2018/1116},
+    year = {2018},
+    note = {\url{https://eprint.iacr.org/2018/1116}},
+}
+
+@inproceedings{AJS16,
+  author        = {Erdem Alkim and Philipp Jakubeit and Peter Schwabe},
+  title         = {A new hope on ARM Cortex-M},
+  booktitle     = {Security, Privacy, and Advanced Cryptography Engineering},
+  editor        = {Claude Carlet and Anwar Hasan and Vishal Saraswat},
+  publisher     = {Springer-Verlag Berlin Heidelberg},
+  series        = {Lecture Notes in Computer Science},
+  volume        = {10076},
+  year          = {2016},
+  pages         = {332--349},
+  note          = {Document ID: c7a82d41d39c535fd09ca1b032ebca1b, \url{http://cryptojedi.org/papers/\#newhopearm}},
+}
+
+@inproceedings{deClercq:2015:ESI:2755753.2755830,
+ author = {de Clercq, Ruan and Roy, Sujoy Sinha and Vercauteren, Frederik and Verbauwhede, Ingrid},
+ title = {Efficient Software Implementation of ring-LWE Encryption},
+ booktitle = {Proceedings of the 2015 Design, Automation \&\#38; Test in Europe Conference \&\#38; Exhibition},
+ series = {DATE '15},
+ year = {2015},
+ isbn = {978-3-9815370-4-8},
+ location = {Grenoble, France},
+ pages = {339--344},
+ numpages = {6},
+ url = {http://dl.acm.org/citation.cfm?id=2755753.2755830},
+ acmid = {2755830},
+ publisher = {EDA Consortium},
+ address = {San Jose, CA, USA},
+ keywords = {discrete gaussian sampling, number theoretic transform, post-quantum secure, public-key encryption, ring learning with errors (ring-lwe), software implementation},
+}
+
+@article{DBLP:journals/aaecc/DwarakanathG14,
+	author    = {Nagarjun C. Dwarakanath and
+	Steven D. Galbraith},
+	title     = {Sampling from discrete Gaussians for lattice-based cryptography on
+	a constrained device},
+	journal   = {Appl. Algebra Eng. Commun. Comput.},
+	volume    = {25},
+	number    = {3},
+	pages     = {159--180},
+	year      = {2014},
+	url       = {http://dx.doi.org/10.1007/s00200-014-0218-3},
+	doi       = {10.1007/s00200-014-0218-3},
+	timestamp = {Wed, 18 Jun 2014 11:18:47 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/aaecc/DwarakanathG14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{DBLP:conf/ches/PoppelmannDG14,
+	author    = {Thomas P{\"{o}}ppelmann and
+	L{\'{e}}o Ducas and
+	Tim G{\"{u}}neysu},
+	title     = {Enhanced Lattice-Based Signatures on Reconfigurable Hardware},
+	booktitle = {{CHES} 2014},
+	pages     = {353--370},
+	year      = {2014},
+	crossref  = {DBLP:conf/ches/2014},
+	url       = {http://dx.doi.org/10.1007/978-3-662-44709-3_20},
+	doi       = {10.1007/978-3-662-44709-3_20},
+	timestamp = {Mon, 15 Sep 2014 12:09:43 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/PoppelmannDG14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{DBLP:conf/sacrypt/BuchmannCGHW13,
+	author    = {Johannes A. Buchmann and
+	Daniel Cabarcas and
+	Florian G{\"{o}}pfert and
+	Andreas H{\"{u}}lsing and
+	Patrick Weiden},
+	title     = {Discrete Ziggurat: {A} Time-Memory Trade-Off for Sampling from a Gaussian
+	Distribution over the Integers},
+	booktitle = {{SAC} 2013},
+	pages     = {402--417},
+	year      = {2013},
+	url       = {http://dx.doi.org/10.1007/978-3-662-43414-7_20},
+	doi       = {10.1007/978-3-662-43414-7_20},
+	timestamp = {Wed, 08 Apr 2015 01:00:00 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/sacrypt/BuchmannCGHW13},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2014,
+	editor    = {Lejla Batina and
+	Matthew Robshaw},
+	title     = {{CHES} 2014},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {8731},
+	publisher = {Springer},
+	year      = {2014},
+	url       = {http://dx.doi.org/10.1007/978-3-662-44709-3},
+	doi       = {10.1007/978-3-662-44709-3},
+	isbn      = {978-3-662-44708-6},
+	timestamp = {Mon, 15 Sep 2014 12:07:25 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2014},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DBLP:journals/iacr/Saarinen16,
+	author    = {Markku{-}Juhani O. Saarinen},
+	title={Arithmetic Coding and Blinding Countermeasures for Lattice Signatures: Engineering a Side-Channel Resistant Post-Quantum Signature Scheme with Compact Signatures},
+	journal   = {{IACR} Cryptology ePrint Archive},
+	volume    = {2016},
+	pages     = {276},
+	year      = {2016},
+	url       = {http://eprint.iacr.org/2016/276},
+	timestamp = {Thu, 14 Apr 2016 15:02:39 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/iacr/Saarinen16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DBLP:journals/iacr/Ducas14,
+	author    = {L{\'{e}}o Ducas},
+	title     = {Accelerating Bliss: the geometry of ternary polynomials},
+	journal   = {{IACR} Cryptology ePrint Archive},
+	volume    = {2014},
+	pages     = {874},
+	year      = {2014},
+	url       = {http://eprint.iacr.org/2014/874},
+	timestamp = {Sun, 16 Nov 2014 20:34:27 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/iacr/Ducas14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@misc{blissBroken,
+	author = {Bruinderink, L. G. and H\"{u}lsing, A. and Lange, T. and Yarom, Y.},
+	title = {{Flush, Gauss, and reload -- a cache attack on the BLISS lattice-based signature scheme}},
+	howpublished = {Cryptology ePrint Archive, Report 2016/300},
+	year = {2016},
+}
+
+@Misc{		  Mo16,
+	author	= {Dustin Moody},
+	title		= {Post-Quantum Cryptography: {NIST}'s Plan for the Future},
+	howpublished	= {Talk given at {PQCrypto} 2016},
+	url		= {https://pqcrypto2016.jp/data/pqc2016_nist_announcement.pdf},
+	month		= {February},
+	year		= 2016
+}
+
+@article{von1951various,
+	title={Various techniques used in connection with random digits},
+	author={Von Neumann, John},
+	journal={Applied Math Series},
+	volume={12},
+	number={36-38},
+	pages={1},
+	year={1951}
+}
+
+@inproceedings{DBLP:conf/crypto/DucasDLL13,
+	author    = {L{\'{e}}o Ducas and
+	Alain Durmus and
+	Tancr{\`{e}}de Lepoint and
+	Vadim Lyubashevsky},
+	title     = {Lattice Signatures and Bimodal Gaussians},
+	booktitle = {{CRYPTO} 2013},
+	pages     = {40--56},
+	year      = {2013},
+	crossref  = {DBLP:conf/crypto/2013-1},
+	url       = {http://dx.doi.org/10.1007/978-3-642-40041-4_3},
+	doi       = {10.1007/978-3-642-40041-4_3},
+	timestamp = {Wed, 21 Aug 2013 17:20:48 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/crypto/DucasDLL13},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/crypto/2013-1,
+	editor    = {Ran Canetti and
+	Juan A. Garay},
+	title     = {{CRYPTO} 2013},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {8042},
+	publisher = {Springer},
+	year      = {2013},
+	url       = {http://dx.doi.org/10.1007/978-3-642-40041-4},
+	doi       = {10.1007/978-3-642-40041-4},
+	isbn      = {978-3-642-40040-7},
+	timestamp = {Wed, 21 Aug 2013 17:18:04 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/crypto/2013-1},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{DBLP:conf/ches/GuneysuLP12,
+	author    = {Tim G{\"{u}}neysu and
+	Vadim Lyubashevsky and
+	Thomas P{\"{o}}ppelmann},
+	title     = {Practical Lattice-Based Cryptography: {A} Signature Scheme for Embedded
+	Systems},
+	booktitle = {{CHES} 2012},
+	pages     = {530--547},
+	year      = {2012},
+	crossref  = {DBLP:conf/ches/2012},
+	url       = {http://dx.doi.org/10.1007/978-3-642-33027-8_31},
+	doi       = {10.1007/978-3-642-33027-8_31},
+	timestamp = {Fri, 07 Sep 2012 12:38:15 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/GuneysuLP12},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2012,
+	editor    = {Emmanuel Prouff and
+	Patrick Schaumont},
+	title     = {{CHES} 2012},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {7428},
+	publisher = {Springer},
+	year      = {2012},
+	url       = {http://dx.doi.org/10.1007/978-3-642-33027-8},
+	doi       = {10.1007/978-3-642-33027-8},
+	isbn      = {978-3-642-33026-1},
+	timestamp = {Fri, 07 Sep 2012 12:33:45 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2012},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@misc{hoffstein2000public,
+	title={Public key cryptosystem method and apparatus},
+	author={Hoffstein, J. and Pipher, J. and Silverman, J.H.},
+	url={https://www.google.com/patents/US6081597},
+	year={2000},
+	month=jun # "~27",
+	publisher={Google Patents},
+	note={US Patent 6,081,597}
+}
+
+
+@article{DBLP:journals/iacr/HoffsteinPSSWZ15,
+	author    = {Jeffrey Hoffstein and
+	Jill Pipher and
+	John M. Schanck and
+	Joseph H. Silverman and
+	William Whyte and
+	Zhenfei Zhang},
+	title     = {Choosing Parameters for NTRUEncrypt},
+	journal   = {{IACR} Cryptology ePrint Archive},
+	volume    = {2015},
+	pages     = {708},
+	year      = {2015},
+	url       = {http://eprint.iacr.org/2015/708},
+	timestamp = {Tue, 28 Jul 2015 11:08:22 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/iacr/HoffsteinPSSWZ15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{DBLP:conf/ants/HoffsteinPS98,
+	author    = {Jeffrey Hoffstein and
+	Jill Pipher and
+	Joseph H. Silverman},
+	title     = {{NTRU:} {A} Ring-Based Public Key Cryptosystem},
+	booktitle = {Algorithmic Number Theory, 1998},
+	pages     = {267--288},
+	year      = {1998},
+	crossref  = {DBLP:conf/ants/1998},
+	url       = {http://dx.doi.org/10.1007/BFb0054868},
+	doi       = {10.1007/BFb0054868},
+	timestamp = {Thu, 16 Jun 2011 15:52:18 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ants/HoffsteinPS98},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ants/1998,
+	editor    = {Joe Buhler},
+	title     = {Algorithmic Number Theory, 1998},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {1423},
+	publisher = {Springer},
+	year      = {1998},
+	isbn      = {3-540-64657-4},
+	timestamp = {Tue, 02 Jul 2002 10:29:56 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ants/1998},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{DBLP:conf/uss/AlkimDPS16,
+	author    = {Erdem Alkim and
+	L{\'{e}}o Ducas and
+	Thomas P{\"{o}}ppelmann and
+	Peter Schwabe},
+	title     = {Post-quantum Key Exchange - {A} New Hope},
+	booktitle = {{USENIX} Security 2016},
+	pages     = {327--343},
+	year      = {2016},
+	crossref  = {DBLP:conf/uss/2016},
+	url       = {https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/alkim},
+	timestamp = {Mon, 05 Sep 2016 15:43:05 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/uss/AlkimDPS16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/uss/2016,
+	editor    = {Thorsten Holz and
+	Stefan Savage},
+	title     = {{USENIX} Security 2016},
+	publisher = {{USENIX} Association},
+	year      = {2016},
+	url       = {https://www.usenix.org/conference/usenixsecurity16},
+	timestamp = {Mon, 05 Sep 2016 15:32:50 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/uss/2016},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@ARTICLE{etsi-QSC,
+	author = {{E}uropean {T}elecommunication {S}tandards {I}nstitute ({ETSI})},
+	title = {Quantum Safe Cryptography and Security},
+	howpublished = {ETSI White Paper No.8},
+	journal  = {http://www.etsi.org/},
+	month = {June},
+	year = {2015}
+}
+
+@ARTICLE{nist-PQ,
+	author = {{N}ational {I}nstitute of {S}tandards and {T}echnology ({NIST})},
+	title = {Report on Post-Quantum Cryptography},
+	howpublished = {Draft NIST IR 8105},
+	journal  = {http://www.nist.gov/},
+	month = {February},
+	year = {2016}
+}
+
+@article{Shor:1997:PAP:264393.264406,
+	author = {Shor, Peter W.},
+	title = {Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer},
+	journal = {SIAM J. Comput.},
+	issue_date = {Oct. 1997},
+	volume = {26},
+	number = {5},
+	month = oct,
+	year = {1997},
+	issn = {0097-5397},
+	pages = {1484--1509},
+	numpages = {26},
+	url = {http://dx.doi.org/10.1137/S0097539795293172},
+	doi = {10.1137/S0097539795293172},
+	acmid = {264406},
+	publisher = {Society for Industrial and Applied Mathematics},
+	address = {Philadelphia, PA, USA},
+	keywords = {Church's thesis, Fourier transforms, algorithmic number theory, discrete logarithms, foundations of quantum mechanics, prime factorization, quantum computers, spin systems},
+}
+
+@article{Marsaglia:2000:ZMG,
+	author =       {George Marsaglia and Wai Wan Tsang},
+	title =        {The ziggurat method for generating random variables},
+	journal =      {j-J-STAT-SOFT},
+	volume =       {5},
+	number =       {8},
+	pages =        {1--7},
+	year =         {2000},
+	CODEN =        {JSSOBK},
+	ISSN =         {1548-7660},
+	URL =          {http://www.jstatsoft.org/v05/i08},
+	fjournal =     {Journal of Statistical Software},
+	journal-URL =  {http://www.jstatsoft.org/}
+}
+
+
+@string{CASES = "Proceedings of the International Conference on
+	Compilers, Architectures, and Synthesis for
+	Embedded Systems"}
+
+
+@misc{hidden,
+	title={Authors and Title hidden for blind review},
+	author={HIDDEN}
+}
+
+@INPROCEEDINGS{662009,
+	author={Nahum, E. and O'Malley, S. and Orman, H. and Schroeppel, R.},
+	booktitle={Architecture and Implementation of High Performance Communication Subsystems, 1995. (HPCS '95), 1995 Third IEEE Workshop on the},
+	title={Towards High Performance Cryptographic Software},
+	year={1995},
+	pages={69-72},
+	keywords={Bandwidth;Computer security;Contracts;Cryptography;Hardware;Internet;Multicast algorithms;Network servers;Software algorithms;Software performance},
+	month={Aug},}
+
+@manual{IntelNIWP,
+	key    = {IntelNIWP},
+	author = {Intel},
+	title  = {Intel Advanced Encryption Standard (AES) New Instructions Set},
+	month  = sept,
+	year   = 2012,
+	url    = {https://software.intel.com/sites/default/files/article/165683/aes-wp-2012-09-22-v01.pdf}
+}
+
+@manual{IntelW,
+	key    = {IntelW},
+	author = {Intel},
+	title  = {Intel 64 and IA-32 Architectures Software Developer's Manual},
+	month  = sept,
+	year   = 2015,
+	url    = {http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developers-manual.pdf}
+}
+
+@manual{AlteraCustomNiosII15,
+	key    = {AlteraCustomNiosII},
+	author = {Altera},
+	title  = {Nios II Custom Instruction User Guide},
+	month  = nov,
+	year   = 2015,
+	url    = {https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/ug/ug_nios2_custom_instruction.pdf}
+}
+
+@Manual{CadenceTensilica15,
+	title =        {Tensilica Customizable Processor IP},
+	key =          {Ten},
+	organization = {Cadence Inc.},
+	year =         2015,
+	url =         {http://ip.cadence.com/ipportfolio/tensilica-ip}
+}
+
+@Manual{SynopsysARC,
+	title =        {DesignWare ARC Processor Cores},
+	key =          {Ten},
+	organization = {Synopsys Inc.},
+	year =         2015,
+	url =         {http://www.synopsys.com/IP/PROCESSORIP/ARCPROCESSORS/Pages/default.aspx}
+}
+
+
+@Manual{CorExtend14,
+	title =        {MIPS32\textregistered~M5150 Processor Core Family Software User's Manual},
+	key =          {Corextend},
+	organization = {Imagination Technologies Ltd},
+	month  = jul,
+	year =         2014,
+	url =         {https://imagination-technologies-cloudfront-assets.s3.amazonaws.com/documentation/MD00980-2B-M5150-SUM-01.02.pdf}
+}
+
+
+@InProceedings{GrossschaedlMar06,
+	author =       {Johann Gro{\ss}sch{\"a}dl and Stefan Tillich and
+	Paolo Ienne and Laura Pozzi and Ajay K. Verma},
+	title =        {Combining Algorithm Exploration with Instruction Set
+	Design: A Study in Elliptic Curve Cryptography},
+	booktitle =    {DATE},
+	key =          {Gro},
+	year =         2006,
+	address =      {Munich},
+	month =        mar,
+	pages =        {218--23},
+	acceptance =   {Acceptance rate 32\%},
+	keywords =     {Instruction-Set Extensions; Cryptography},
+	infoscience =  {export}
+}
+
+
+@InProceedings{PozziSep05,
+	author =       {Pozzi, Laura and Ienne, Paolo},
+	title =        {Exploiting Pipelining to Relax Register-File Port
+	Constraints of Instruction-Set Extensions},
+	booktitle =    CASES,
+	key =          {Poz},
+	year =         2005,
+	address =      {San Francisco, Calif.},
+	month =        sep,
+	pages =        {2--10},
+	acceptance =   {Acceptance rate 31\%},
+	keywords =     {Instruction-Set Extensions},
+	infoscience =  {export}
+}
+
+@InCollection{RegazzoniSep09,
+	key =          {Reg},
+	author =       {Francesco Regazzoni and Alessandro Cevrero and
+	Fran{\c{c}}ois-Xavier Standaert and Stephane Badel
+	and Theo Kluter and Philip Brisk and Yusuf Leblebici
+	and Paolo Ienne},
+	title =        {A Design Flow and Evaluation Framework for
+	{DPA}-Resistant Instruction Set Extensions},
+	booktitle =    {CHES09},
+	editor =       {Christophe Clavier and Kris Gaj},
+	month =        sep,
+	year =         2009,
+	pages =        {205--19},
+	publisher =    {Springer},
+	series =       {LNCS},
+	volume =       5747,
+	TMPacceptance ={Acceptance rate },
+	keywords =     {Cryptography},
+	infoscience =  {export}
+}
+
+
+@inproceedings{DBLP:conf/ctrsa/TillichH08,
+	author    = {Stefan Tillich and
+	Christoph Herbst},
+	title     = {Boosting {AES} Performance on a Tiny Processor Core},
+	booktitle = {{CT-RSA} 2008},
+	pages     = {170--186},
+	year      = {2008},
+	crossref  = {DBLP:conf/ctrsa/2008},
+	timestamp = {Wed, 16 Apr 2008 10:54:42 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ctrsa/TillichH08},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ctrsa/2008,
+	editor    = {Tal Malkin},
+	title     = {{CT-RSA} 2008},
+	series    = {LNCS},
+	volume    = {4964},
+	publisher = {Springer},
+	year      = {2008},
+	isbn      = {978-3-540-79262-8},
+	timestamp = {Wed, 16 Apr 2008 10:52:20 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ctrsa/2008},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@InCollection{TillichSep07,
+	key =          {Til},
+	author =       {Stefan Tillich and Johann Gro{\ss}sch{\"a}dl},
+	title =        {Power Analysis Resistant {AES} Implementation with
+	Instruction Set Extensions},
+	booktitle =    CHES07,
+	editor =       {Pascal Paillier and Ingrid Verbauwhede},
+	month =        sep,
+	pages =        {303--19},
+	publisher =    {Springer},
+	year =         2007,
+	volume =       4727,
+	series =       LNCS,
+	address =      {Berlin},
+}
+
+
+
+@ARTICLE{nist-std,
+	author = {{N}ational {I}nstitute of {S}tandards and {T}echnology ({NIST})},
+	title = {Announcing the {A}dvanced {E}ncryption {S}tandard ({AES})},
+	howpublished = {Federal Information Processing Standards Publication 197},
+	journal  = {http://www.nist.gov/},
+	month = {November},
+	year = {2001}
+}
+
+@Misc{nistsha,
+	title =        {{SHA-3} Competition},
+	key =          {SHA3},
+	organization = {{N}ational {I}nstitute of {S}tandards and {T}echnology ({NIST})},
+	year =         2012,
+	url =         {http://csrc.nist.gov/groups/ST/hash/sha-3/}
+}
+
+@inproceedings{Constantin2012,
+	doi = {10.1109/asap.2012.13},
+	url = {https://doi.org/10.1109/asap.2012.13},
+	year  = {2012},
+	month = {jul},
+	publisher = {{IEEE}},
+	author = {Jeremy H.-F. Constantin and Andreas P. Burg and Frank K. Gurkaynak},
+	title = {Instruction Set Extensions for Cryptographic Hash Functions on a Microcontroller Architecture},
+	booktitle = {2012 {IEEE} 23rd International Conference on Application-Specific Systems,  Architectures and Processors}
+}
+
+@misc{cryptoeprint:2012:050,
+	author = {Jeremy Constantin and Andreas Burg and Frank K. Gurkaynak},
+	title = {Investigating the Potential of Custom Instruction Set Extensions for SHA-3 Candidates on a 16-bit Microcontroller Architecture},
+	howpublished = {Cryptology ePrint Archive, Report 2012/050},
+	year = {2012},
+	note = {\url{http://eprint.iacr.org/}},
+}
+
+
+@misc{caesar,
+	title = {CAESAR: Competition for Authenticated Encryption: Security, Applicability, and Robustness},
+	year = {2013},
+	note = {http://competitions.cr.yp.to/caesar.html}},
+}
+
+
+@InCollection{KocherAug96,
+	key =          {Koc},
+	author =       {Paul C. Kocher},
+	title =        {Timing Attacks on Implementations of
+	{D}iffie-{H}ellman, {RSA}, {DSS}, and Other Systems},
+	booktitle =    CRYPTO96,
+	editor =       "Neal I. Koblitz",
+	month =        sep,
+	year =         1996,
+	series =       LNCS,
+	volume =       1109,
+	publisher =    {Springer},
+	address =      {Berlin},
+	pages =        {104--13},
+}
+
+@InCollection{KocherAug99,
+	author =       {Paul Kocher and Joshua Jaffe and Benjamin Jun},
+	title =        {Differential Power Analysis},
+	booktitle =    CRYPTO99,
+	key =          {Koc},
+	pages =        {398--412},
+	publisher =    {Springer},
+	year =         1999,
+	editor =       {Michael Wiener},
+	volume =       1666,
+	series =       LNCS,
+	address =      {Berlin},
+	month =        aug
+}
+
+@inproceedings{TiriFeb04,
+	key =          {Tir},
+	author =       {Kris Tiri and Ingrid Verbauwhede},
+	title =        {A Logic Level Design Methodology for a Secure {DPA}
+	Resistant {ASIC} or {FPGA} Implementation},
+	booktitle =    DATE,
+	address =      {Paris},
+	month =        feb,
+	year =         2004,
+	pages =        {246--51},
+}
+
+
+@Book{Mangard07,
+	key =          "Man",
+	author =       "Stefan Mangard and Elisabeth Oswald and Thomas Popp",
+	title =        {Power Analysis Attacks: Revealing the Secrets of
+	Smart Cards},
+	series =       "Advances in Information Security",
+	publisher =    {Springer},
+	address =      {New York},
+	year =         2007,
+}
+
+
+
+
+@inproceedings{Burke:2000:ASF:378993.379238,
+	author = {Burke, Jerome and McDonald, John and Austin, Todd},
+	title = {Architectural Support for Fast Symmetric-key Cryptography},
+	booktitle = {Proceedings of Architectural Support for Programming Languages and Operating Systems},
+	series = {ASPLOS IX},
+	year = {2000},
+	isbn = {1-58113-317-0},
+	location = {Cambridge, Massachusetts, USA},
+	pages = {178--189},
+	numpages = {12},
+	acmid = {379238},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+} 
+
+@inproceedings{Bertoni:2006:SUA:1169217.1169233,
+	author = {Bertoni, Guido Marco and Breveglieri, Luca and Roberto, Farina and Regazzoni, Francesco},
+	title = {Speeding Up {AES} By Extending a 32 Bit Processor Instruction Set},
+	booktitle = {Proceedings of the IEEE 17th Intl. Conf. on Application-specific Systems, Architectures and Processors},
+	series = {ASAP '06},
+	year = {2006},
+	isbn = {0-7695-2682-9},
+	pages = {275--282},
+	numpages = {8},
+	acmid = {1169233},
+	publisher = {IEEE Computer Society},
+	address = {Washington, DC, USA},
+} 
+
+@inproceedings{Tillich:2006:ISE:2105334.2105366,
+	author = {Tillich, Stefan and Gro{\ss}sch{\"a}dl, Johann},
+	title = {Instruction Set Extensions for Efficient AES Implementation on 32-bit Processors},
+	booktitle = {Proceedings of the 8th International Conference on Cryptographic Hardware and Embedded Systems},
+	series = {CHES'06},
+	year = {2006},
+	isbn = {3-540-46559-6, 978-3-540-46559-1},
+	location = {Yokohama, Japan},
+	pages = {270--284},
+	numpages = {15},
+	acmid = {2105366},
+	publisher = {Springer-Verlag},
+	keywords = {SPARC V8 architecture, advanced encryption standard, efficient implementation, embedded RISC processor, instruction set extensions},
+} 
+
+
+
+
+@inproceedings{DBLP:conf/ches/GrossschadlS04,
+	author    = {Johann Gro{\ss}sch{\"{a}}dl and
+	Erkay Savas},
+	title     = {Instruction Set Extensions for Fast Arithmetic in Finite Fields {GF(}
+	p) and GF(2\({}^{\mbox{m}}\))},
+	booktitle = {Cryptographic Hardware and Embedded Systems - {CHES} 2004: 6th International
+	Workshop Cambridge, MA, USA, August 11-13, 2004. Proceedings},
+	pages     = {133--147},
+	year      = {2004},
+	crossref  = {DBLP:conf/ches/2004},
+	timestamp = {Thu, 07 Jul 2011 15:50:14 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/GrossschadlS04},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2004,
+	editor    = {Marc Joye and
+	Jean{-}Jacques Quisquater},
+	title     = {Cryptographic Hardware and Embedded Systems - {CHES} 2004: 6th International
+	Workshop Cambridge, MA, USA, August 11-13, 2004. Proceedings},
+	series    = {LNCS},
+	volume    = {3156},
+	publisher = {Springer},
+	year      = {2004},
+	isbn      = {3-540-22666-4},
+	timestamp = {Mon, 12 Jul 2004 09:33:11 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2004},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/iccsa/TillichG05,
+	author    = {Stefan Tillich and
+	Johann Gro{\ss}sch{\"{a}}dl},
+	title     = {Accelerating {AES} Using Instruction Set Extensions for Elliptic Curve
+	Cryptography},
+	booktitle = {Computational Science and Its Applications - {ICCSA} 2005, International
+	Conference, Singapore, May 9-12, 2005, Proceedings, Part {II}},
+	pages     = {665--675},
+	year      = {2005},
+	crossref  = {DBLP:conf/iccsa/2005-2},
+	timestamp = {Wed, 18 May 2005 09:57:51 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/iccsa/TillichG05},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/iccsa/2005-2,
+	editor    = {Osvaldo Gervasi and
+	Marina L. Gavrilova and
+	Vipin Kumar and
+	Antonio Lagan{\`{a}} and
+	Heow Pueh Lee and
+	Youngsong Mun and
+	David Taniar and
+	Chih Jeng Kenneth Tan},
+	title     = {Computational Science and Its Applications - {ICCSA} 2005, International
+	Conference, Singapore, May 9-12, 2005, Proceedings, Part {II}},
+	series    = {LNCS},
+	volume    = {3481},
+	publisher = {Springer},
+	year      = {2005},
+	isbn      = {3-540-25861-2},
+	timestamp = {Wed, 18 May 2005 09:55:08 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/iccsa/2005-2},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@inproceedings{kocher1999,
+	title={Differential power analysis},
+	author={Kocher, Paul and Jaffe, Joshua and Jun, Benjamin},
+	booktitle={Advances in Cryptology—CRYPTO’99},
+	pages={388--397},
+	year={1999},
+	organization={Springer}
+}
+
+@article{kocher2011,
+	title={Introduction to differential power analysis},
+	author={Kocher, Paul and Jaffe, Joshua and Jun, Benjamin and Rohatgi, Pankaj},
+	journal={Journal of Cryptographic Engineering},
+	volume={1},
+	number={1},
+	pages={5--27},
+	year={2011},
+	publisher={Springer}
+}
+
+@incollection{mangard2005,
+	title={Successfully attacking masked AES hardware implementations},
+	author={Mangard, Stefan and Pramstaller, Norbert and Oswald, Elisabeth},
+	booktitle={Cryptographic Hardware and Embedded Systems--CHES 2005},
+	pages={157--171},
+	year={2005},
+	publisher={Springer}
+}
+
+@inproceedings{kaps2010,
+	title={DPA resistant AES on FPGA using partial DDL},
+	author={Kaps, J and Velegalati, Rajesh},
+	booktitle={Field-Programmable Custom Computing Machines (FCCM), 2010 18th IEEE Annual International Symposium on},
+	pages={273--280},
+	year={2010},
+	organization={IEEE}
+}
+
+@incollection{guneysu2011,
+	title={Generic side-channel countermeasures for reconfigurable devices},
+	author={G{\"u}neysu, Tim and Moradi, Amir},
+	booktitle={Cryptographic Hardware and Embedded Systems--CHES 2011},
+	pages={33--48},
+	year={2011},
+	publisher={Springer}
+}
+
+@article{regazzoni2011,
+	title={FPGA implementations of the AES masked against power analysis attacks},
+	author={Regazzoni, Francesco and Wang, Yi and Standaert, Fran{\c{c}}ois-Xavier and others},
+	journal={Proceedings of COSADE},
+	volume={2011},
+	pages={56--66},
+	year={2011}
+}
+
+@incollection{nassar2011,
+	title={Formal analysis of the entropy/security trade-off in first-order masking countermeasures against side-channel attacks},
+	author={Nassar, Maxime and Guilley, Sylvain and Danger, Jean-Luc},
+	booktitle={Progress in Cryptology--INDOCRYPT 2011},
+	pages={22--39},
+	year={2011},
+	publisher={Springer}
+}
+
+@inproceedings{chaves2006,
+	title={Reconfigurable memory based AES co-processor},
+	author={Chaves, Ricardo and Kuzmanov, Georgi and Vassiliadis, Stamatis and Sousa, Leonel},
+	booktitle={Parallel and Distributed Processing Symposium, 2006. IPDPS 2006. 20th International},
+	pages={8--pp},
+	year={2006},
+	organization={IEEE}
+}
+
+@inproceedings{guntur2014,
+	title={Side-channel AttacK User Reference Architecture board SAKURA-G},
+	author={Guntur, H and Ishii, J and Satoh, A},
+	booktitle={Consumer Electronics (GCCE), 2014 IEEE 3rd Global Conference on},
+	pages={271--274},
+	year={2014},
+	organization={IEEE}
+}
+
+@article{sasdrich2015,
+	title={Side-Channel Protection by Randomizing Look-Up Tables on Reconfigurable Hardware},
+	author={Sasdrich, Pascal and Mischke, Oliver and Moradi, Amir and G{\"u}neysu, Tim},
+	journal={proceedings of COSADE},
+	year={2015}
+}
+
+@INPROCEEDINGS{QS01,
+	AUTHOR =       "J.-J. Quisquater and D. Samyde",
+	TITLE =        "{{ElectroMagnetic Analysis (EMA): Measures and Counter-Measures for
+	Smard Cards}}",
+	BOOKTITLE =    "Smart Card Programming and Security (E-smart 2001)",
+	YEAR =         "2001",
+	editor =       "I. Attali and T. P. Jensen ",
+	volume =       "2140",
+	series =       "LNCS",
+	pages =        "200-210",
+	publisher =    "Springer-Verlag"
+}
+
+@InProceedings{GMO01,
+	author =   {K. Gandolfi and C. Mourtel and F. Olivier},
+	title =    {{Electromagnetic Analysis: Concrete Results}},
+	booktitle =    {Proceedings of 3rd International Workshop on Cryptographic
+	Hardware and Embedded Systems (CHES)},
+	year =     {2001},
+	editor =   {\c{C}.K. Ko\c{c} and D. Naccache and C. Paar},
+	number = {2162},
+	series =   {LNCS},
+	pages =     {255-265},
+	publisher= {Springer-Verlag},
+}
+
+@article{BDL01,
+	author        = {Dan Boneh and Richard A. DeMillo and Richard J. Lipton},
+	title         = {On the Importance of Eliminating Errors in Cryptographic Computations},
+	journal       = {Journal of Cryptology},
+	publisher     = {Springer-Verlag New York},
+	volume        = {14},
+	number        = {2},
+	year          = {2001},
+	pages         = {101--119},
+	note          = {\url{http://crypto.stanford.edu/~dabo/pubs/papers/faults.ps.gz}},
+}
+
+@INPROCEEDINGS{nicv_bhasin,
+	author={Bhasin, S. and Danger, J.-L. and Guilley, S. and Najm, Z.},
+	booktitle={Electromagnetic Compatibility, Tokyo (EMC'14/Tokyo), 2014 International Symposium on},
+	title={{NICV: Normalized inter-class variance for detection of side-channel leakage}},
+	year={2014},
+	month={May},
+	pages={310-313},
+}
+
+@INPROCEEDINGS{satoh_sakura,
+	author={Guntur, H. and Ishii, J. and Satoh, A.},
+	booktitle={Consumer Electronics (GCCE), 2014 IEEE 3rd Global Conference on},
+	title={{Side-channel AttacK User Reference Architecture board SAKURA-G}},
+	year={2014},
+	month={Oct},
+	pages={271-274},
+}
+
+
+
+
+@inproceedings{DBLP:conf/fse/Messerges00,
+	author    = {Thomas S. Messerges},
+	title     = {Securing the {AES} Finalists Against Power Analysis Attacks},
+	booktitle = {Fast Software Encryption, 7th International Workshop, {FSE} 2000,
+	New York, NY, USA, April 10-12, 2000, Proceedings},
+	pages     = {150--164},
+	year      = {2000},
+	crossref  = {DBLP:conf/fse/2000},
+	timestamp = {Wed, 22 Jun 2011 15:24:03 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/fse/Messerges00},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/fse/2000,
+	editor    = {Bruce Schneier},
+	title     = {Fast Software Encryption, 7th International Workshop, {FSE} 2000,
+	New York, NY, USA, April 10-12, 2000, Proceedings},
+	series    = {LNCS},
+	volume    = {1978},
+	publisher = {Springer},
+	year      = {2001},
+	isbn      = {3-540-41728-1},
+	timestamp = {Mon, 21 Jan 2002 16:11:33 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/fse/2000},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/crypto/ChariJRR99,
+	author    = {Suresh Chari and
+	Charanjit S. Jutla and
+	Josyula R. Rao and
+	Pankaj Rohatgi},
+	title     = {Towards Sound Approaches to Counteract Power-Analysis Attacks},
+	booktitle = {Advances in Cryptology - {CRYPTO} '99, 19th Annual International Cryptology
+	Conference, Santa Barbara, California, USA, August 15-19, 1999, Proceedings},
+	pages     = {398--412},
+	year      = {1999},
+	crossref  = {DBLP:conf/crypto/1999},
+	timestamp = {Fri, 18 Sep 2009 12:20:27 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/crypto/ChariJRR99},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/crypto/1999,
+	editor    = {Michael J. Wiener},
+	title     = {Advances in Cryptology - {CRYPTO} '99, 19th Annual International Cryptology
+	Conference, Santa Barbara, California, USA, August 15-19, 1999, Proceedings},
+	series    = {LNCS},
+	volume    = {1666},
+	publisher = {Springer},
+	year      = {1999},
+	isbn      = {3-540-66347-9},
+	timestamp = {Thu, 03 Jan 2002 11:55:47 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/crypto/1999},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/ches/TiriV03,
+	author    = {Kris Tiri and
+	Ingrid Verbauwhede},
+	title     = {Securing Encryption Algorithms against {DPA} at the Logic Level: Next
+	Generation Smart Card Technology},
+	booktitle = {Cryptographic Hardware and Embedded Systems - {CHES} 2003, 5th International
+	Workshop, Cologne, Germany, September 8-10, 2003, Proceedings},
+	pages     = {125--136},
+	year      = {2003},
+	crossref  = {DBLP:conf/ches/2003},
+	timestamp = {Tue, 22 Mar 2011 09:27:20 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/TiriV03},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2003,
+	editor    = {Colin D. Walter and
+	{\c{C}}etin Kaya Ko{\c{c}} and
+	Christof Paar},
+	title     = {Cryptographic Hardware and Embedded Systems - {CHES} 2003, 5th International
+	Workshop, Cologne, Germany, September 8-10, 2003, Proceedings},
+	series    = {LNCS},
+	volume    = {2779},
+	publisher = {Springer},
+	year      = {2003},
+	isbn      = {3-540-40833-9},
+	timestamp = {Mon, 27 Oct 2003 15:09:08 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2003},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/date/TiriV04,
+	author    = {Kris Tiri and
+	Ingrid Verbauwhede},
+	title     = {A Logic Level Design Methodology for a Secure {DPA} Resistant {ASIC}
+	or {FPGA} Implementation},
+	booktitle = {2004 Design, Automation and Test in Europe Conference and Exposition
+	{(DATE} 2004), 16-20 February 2004, Paris, France},
+	pages     = {246--251},
+	year      = {2004},
+	crossref  = {DBLP:conf/date/2004},
+	timestamp = {Tue, 30 Jun 2015 16:34:11 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/date/TiriV04},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/date/2004,
+	title     = {2004 Design, Automation and Test in Europe Conference and Exposition
+	{(DATE} 2004), 16-20 February 2004, Paris, France},
+	publisher = {{IEEE} Computer Society},
+	year      = {2004},
+	isbn      = {0-7695-2085-5},
+	timestamp = {Tue, 30 Jun 2015 16:34:11 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/date/2004},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@article{DBLP:journals/tcos/RegazzoniEPGGMDPPLI09,
+	author    = {Francesco Regazzoni and
+	Thomas Eisenbarth and
+	Axel Poschmann and
+	Johann Gro{\ss}sch{\"{a}}dl and
+	Frank K. G{\"{u}}rkaynak and
+	Marco Macchetti and
+	Zeynep Toprak Deniz and
+	Laura Pozzi and
+	Christof Paar and
+	Yusuf Leblebici and
+	Paolo Ienne},
+	title     = {Evaluating Resistance of {MCML} Technology to Power Analysis Attacks
+	Using a Simulation-Based Methodology},
+	journal   = {Transactions on Computational Science},
+	volume    = {4},
+	pages     = {230--243},
+	year      = {2009},
+	crossref  = {DBLP:journals/tcos/2009-4},
+	timestamp = {Tue, 31 Mar 2009 14:58:03 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/tcos/RegazzoniEPGGMDPPLI09},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:journals/tcos/2009-4,
+	editor    = {Marina L. Gavrilova and
+	Chih Jeng Kenneth Tan and
+	Edward D. Moreno},
+	title     = {Transactions on Computational Science IV, Special Issue on Security
+	in Computing},
+	series    = {LNCS},
+	volume    = {5430},
+	publisher = {Springer},
+	year      = {2009},
+	isbn      = {978-3-642-01003-3},
+	timestamp = {Tue, 31 Mar 2009 14:57:07 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/tcos/2009-4},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/codes/YuS07,
+	author    = {Pengyuan Yu and
+	Patrick Schaumont},
+	title     = {Secure {FPGA} circuits using controlled placement and routing},
+	booktitle = {Proceedings of the 5th International Conference on Hardware/Software
+	Codesign and System Synthesis, {CODES+ISSS} 2007, Salzburg, Austria,
+	September 30 - October 3, 2007},
+	pages     = {45--50},
+	year      = {2007},
+	crossref  = {DBLP:conf/codes/2007},
+	timestamp = {Tue, 08 Apr 2008 13:55:54 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/codes/YuS07},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/codes/2007,
+	editor    = {Soonhoi Ha and
+	Kiyoung Choi and
+	Nikil D. Dutt and
+	J{\"{u}}rgen Teich},
+	title     = {Proceedings of the 5th International Conference on Hardware/Software
+	Codesign and System Synthesis, {CODES+ISSS} 2007, Salzburg, Austria,
+	September 30 - October 3, 2007},
+	publisher = {{ACM}},
+	year      = {2007},
+	isbn      = {978-1-59593-824-4},
+	timestamp = {Tue, 08 Apr 2008 13:55:54 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/codes/2007},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/ches/SuzukiS06,
+	author    = {Daisuke Suzuki and
+	Minoru Saeki},
+	title     = {Security Evaluation of {DPA} Countermeasures Using Dual-Rail Pre-charge
+	Logic Style},
+	booktitle = {Cryptographic Hardware and Embedded Systems - {CHES} 2006, 8th International
+	Workshop, Yokohama, Japan, October 10-13, 2006, Proceedings},
+	pages     = {255--269},
+	year      = {2006},
+	crossref  = {DBLP:conf/ches/2006},
+	timestamp = {Thu, 14 Dec 2006 14:04:03 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/SuzukiS06},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2006,
+	editor    = {Louis Goubin and
+	Mitsuru Matsui},
+	title     = {Cryptographic Hardware and Embedded Systems - {CHES} 2006, 8th International
+	Workshop, Yokohama, Japan, October 10-13, 2006, Proceedings},
+	series    = {LNCS},
+	volume    = {4249},
+	publisher = {Springer},
+	year      = {2006},
+	isbn      = {3-540-46559-6},
+	timestamp = {Thu, 14 Dec 2006 14:04:03 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2006},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DBLP:journals/iacr/WildMG15,
+	author    = {Alexander Wild and
+	Amir Moradi and
+	Tim G{\"{u}}neysu},
+	title     = {GliFreD: Glitch-Free Duplication - Towards Power-Equalized Circuits
+	on FPGAs},
+	journal   = {{IACR} Cryptology ePrint Archive},
+	volume    = {2015},
+	pages     = {124},
+	year      = {2015},
+	url       = {http://eprint.iacr.org/2015/124},
+	timestamp = {Fri, 20 Mar 2015 14:32:19 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/iacr/WildMG15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/ches/GuneysuM11,
+	author    = {Tim G{\"{u}}neysu and
+	Amir Moradi},
+	title     = {Generic Side-Channel Countermeasures for Reconfigurable Devices},
+	booktitle = {Cryptographic Hardware and Embedded Systems - {CHES} 2011 - 13th International
+	Workshop, Nara, Japan, September 28 - October 1, 2011. Proceedings},
+	pages     = {33--48},
+	year      = {2011},
+	crossref  = {DBLP:conf/ches/2011},
+	timestamp = {Thu, 29 Sep 2011 19:49:38 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/GuneysuM11},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2011,
+	editor    = {Bart Preneel and
+	Tsuyoshi Takagi},
+	title     = {Cryptographic Hardware and Embedded Systems - {CHES} 2011 - 13th International
+	Workshop, Nara, Japan, September 28 - October 1, 2011. Proceedings},
+	series    = {LNCS},
+	volume    = {6917},
+	publisher = {Springer},
+	year      = {2011},
+	isbn      = {978-3-642-23950-2},
+	timestamp = {Thu, 29 Sep 2011 19:44:26 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2011},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/host/SasdrichMMG15,
+	author    = {Pascal Sasdrich and
+	Amir Moradi and
+	Oliver Mischke and
+	Tim G{\"{u}}neysu},
+	title     = {Achieving side-channel protection with dynamic logic reconfiguration
+	on modern FPGAs},
+	booktitle = {{IEEE} International Symposium on Hardware Oriented Security and Trust,
+	{HOST} 2015, Washington, DC, USA, 5-7 May, 2015},
+	pages     = {130--136},
+	year      = {2015},
+	crossref  = {DBLP:conf/host/2015},
+	timestamp = {Tue, 07 Jul 2015 20:50:19 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/host/SasdrichMMG15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/host/2015,
+	title     = {{IEEE} International Symposium on Hardware Oriented Security and Trust,
+	{HOST} 2015, Washington, DC, USA, 5-7 May, 2015},
+	publisher = {{IEEE}},
+	year      = {2015},
+	url       = {http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7119893},
+	isbn      = {978-1-4673-7420-0},
+	timestamp = {Tue, 07 Jul 2015 20:45:38 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/host/2015},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{regazzoni2011fpga,
+	title={FPGA implementations of the AES masked against power analysis attacks},
+	author={Regazzoni, Francesco and Wang, Yi and Standaert, Fran{\c{c}}ois-Xavier and others},
+	journal={Proceedings of COSADE},
+	volume={2011},
+	pages={56--66},
+	year={2011}
+}
+
+@article{DBLP:journals/joc/FeigeFS88,
+	author    = {Uriel Feige and
+	Amos Fiat and
+	Adi Shamir},
+	title     = {Zero-Knowledge Proofs of Identity},
+	journal   = {J. Cryptology},
+	volume    = {1},
+	number    = {2},
+	pages     = {77--94},
+	year      = {1988},
+	url       = {http://dx.doi.org/10.1007/BF02351717},
+	doi       = {10.1007/BF02351717},
+	timestamp = {Tue, 24 May 2011 14:17:59 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/joc/FeigeFS88},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/ches/GottertFSBH12,
+	author    = {Norman G{\"{o}}ttert and
+	Thomas Feller and
+	Michael Schneider and
+	Johannes A. Buchmann and
+	Sorin A. Huss},
+	title     = {On the Design of Hardware Building Blocks for Modern Lattice-Based
+	Encryption Schemes},
+	booktitle = {{CHES} 2012},
+	pages     = {512--529},
+	year      = {2012},
+	crossref  = {DBLP:conf/ches/2012},
+	url       = {http://dx.doi.org/10.1007/978-3-642-33027-8_30},
+	doi       = {10.1007/978-3-642-33027-8_30},
+	timestamp = {Wed, 08 Apr 2015 16:21:37 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/GottertFSBH12},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/latincrypt/PoppelmannOG15,
+	author    = {Thomas P{\"{o}}ppelmann and
+	Tobias Oder and
+	Tim G{\"{u}}neysu},
+	title     = {High-Performance Ideal Lattice-Based Cryptography on 8-Bit ATxmega
+	Microcontrollers},
+	booktitle = {{LATINCRYPT} 2015},
+	pages     = {346--365},
+	year      = {2015},
+	crossref  = {DBLP:conf/latincrypt/2015},
+	url       = {http://dx.doi.org/10.1007/978-3-319-22174-8_19},
+	doi       = {10.1007/978-3-319-22174-8_19},
+	timestamp = {Mon, 17 Aug 2015 14:38:29 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/latincrypt/PoppelmannOG15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/latincrypt/2015,
+	editor    = {Kristin E. Lauter and
+	Francisco Rodr{\'{\i}}guez{-}Henr{\'{\i}}quez},
+	title     = {{LATINCRYPT} 2015},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {9230},
+	publisher = {Springer},
+	year      = {2015},
+	url       = {http://dx.doi.org/10.1007/978-3-319-22174-8},
+	doi       = {10.1007/978-3-319-22174-8},
+	isbn      = {978-3-319-22173-1},
+	timestamp = {Mon, 17 Aug 2015 14:36:00 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/latincrypt/2015},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/ches/RoyVMCV14,
+	author    = {Sujoy Sinha Roy and
+	Frederik Vercauteren and
+	Nele Mentens and
+	Donald Donglong Chen and
+	Ingrid Verbauwhede},
+	title     = {Compact Ring-LWE Cryptoprocessor},
+	booktitle = {{CHES} 2014},
+	pages     = {371--391},
+	year      = {2014},
+	crossref  = {DBLP:conf/ches/2014},
+	url       = {http://dx.doi.org/10.1007/978-3-662-44709-3_21},
+	doi       = {10.1007/978-3-662-44709-3_21},
+	timestamp = {Mon, 15 Sep 2014 12:09:43 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/RoyVMCV14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/wsc/Devroye86,
+	author    = {Luc Devroye},
+	title     = {Sample-based non-uniform random variate generation},
+	booktitle = {Proceedings of the 18th conference on Winter simulation, {WSC} 1986,
+	Washington, DC, USA, December 8-10, 1986},
+	pages     = {260--265},
+	year      = {1986},
+	crossref  = {DBLP:conf/wsc/1986},
+	url       = {http://doi.acm.org/10.1145/318242.318443},
+	doi       = {10.1145/318242.318443},
+	timestamp = {Mon, 08 Jun 2015 08:31:15 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/wsc/Devroye86},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/wsc/1986,
+	editor    = {James R. Wilson and
+	James O. Henriksen and
+	Stephen D. Roberts},
+	title     = {Proceedings of the 18th conference on Winter simulation, {WSC} 1986,
+	Washington, DC, USA, December 8-10, 1986},
+	publisher = {{ACM}},
+	year      = {1986},
+	url       = {http://dl.acm.org/citation.cfm?id=318242},
+	isbn      = {0-911801-11-1},
+	timestamp = {Mon, 08 Jun 2015 08:30:55 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/wsc/1986},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{chor1988knapsack,
+	title={A knapsack-type public key cryptosystem based on arithmetic in finite fields},
+	author={Chor, Benny and Rivest, Ronald L},
+	journal={IEEE Trans Inf. Theory},
+	volume={34},
+	number={5},
+	pages={901--909},
+	year={1988},
+	publisher={IEEE}
+}
+
+@article{mceliece1978public,
+	title={A public-key cryptosystem based on algebraic},
+	author={McEliece, RJ},
+	journal={Coding Th},
+	volume={4244},
+	pages={114--116},
+	year={1978}
+}
+
+@inproceedings{patarin1997oil,
+	title={The oil and vinegar algorithm for signatures},
+	author={Patarin, Jacques},
+	booktitle={Dagstuhl Workshop on Cryptography},
+	year={1997}
+}
+
+
+
+@inproceedings{DBLP:conf/asiacrypt/DucasLP14,
+	author    = {L{\'{e}}o Ducas and
+	Vadim Lyubashevsky and
+	Thomas Prest},
+	title     = {Efficient Identity-Based Encryption over {NTRU} Lattices},
+	booktitle = {{ASIACRYPT} 2014},
+	pages     = {22--41},
+	year      = {2014},
+	crossref  = {DBLP:conf/asiacrypt/2014},
+	url       = {http://dx.doi.org/10.1007/978-3-662-45608-8_2},
+	doi       = {10.1007/978-3-662-45608-8_2},
+	timestamp = {Mon, 10 Nov 2014 13:41:59 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/asiacrypt/DucasLP14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/asiacrypt/2014,
+	editor    = {Palash Sarkar and
+	Tetsu Iwata},
+	title     = {{ASIACRYPT} 2014},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {8874},
+	publisher = {Springer},
+	year      = {2014},
+	url       = {http://dx.doi.org/10.1007/978-3-662-45608-8},
+	doi       = {10.1007/978-3-662-45608-8},
+	isbn      = {978-3-662-45607-1},
+	timestamp = {Mon, 10 Nov 2014 13:41:59 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/asiacrypt/2014},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{Regev05,
+  author    = {Oded Regev},
+  title     = {On lattices, learning with errors, random linear codes, and cryptography},
+  booktitle = {Proceedings of the 37th Annual {ACM} Symposium on Theory of Computing,
+               Baltimore, MD, USA, May 22-24, 2005},
+  pages     = {84--93},
+  year      = {2005},
+  crossref  = {DBLP:conf/stoc/2005},
+  url       = {http://doi.acm.org/10.1145/1060590.1060603},
+  doi       = {10.1145/1060590.1060603},
+  timestamp = {Mon, 20 Mar 2017 15:33:56 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/stoc/Regev05},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{nistsca,
+	title = {Submission Requirements and Evaluation Criteria for the Post-Quantum Cryptography Standardization Process},
+	author={NIST},
+	year = {2016},
+	howpublished = {\url{https://csrc.nist.gov/csrc/media/projects/post-quantum-cryptography/documents/call-for-proposals-final-dec-2016.pdf}},
+}
+
+@inproceedings{ajtai1997public,
+	title={A public-key cryptosystem with worst-case/average-case equivalence},
+	author={Ajtai, Mikl{\'o}s and Dwork, Cynthia},
+	booktitle={Proceedings of the twenty-ninth annual ACM symposium on Theory of computing},
+	pages={284--293},
+	year={1997},
+	organization={ACM}
+}
+
+@article{regev2009lattices,
+	title={On lattices, learning with errors, random linear codes, and cryptography},
+	author={Regev, Oded},
+	journal={Journal of the ACM (JACM)},
+	volume={56},
+	number={6},
+	pages={34},
+	year={2009},
+	publisher={ACM}
+}
+
+@inproceedings{DBLP:conf/eurocrypt/LyubashevskyPR10,
+	author    = {Vadim Lyubashevsky and
+	Chris Peikert and
+	Oded Regev},
+	title     = {On Ideal Lattices and Learning with Errors over Rings},
+	booktitle = {{EUROCRYPT} 2010},
+	pages     = {1--23},
+	year      = {2010},
+	crossref  = {DBLP:conf/eurocrypt/2010},
+	url       = {http://dx.doi.org/10.1007/978-3-642-13190-5_1},
+	doi       = {10.1007/978-3-642-13190-5_1},
+	timestamp = {Tue, 08 Jun 2010 09:21:44 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/eurocrypt/LyubashevskyPR10},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/eurocrypt/2010,
+	editor    = {Henri Gilbert},
+	title     = {{EUROCRYPT} 2010},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {6110},
+	publisher = {Springer},
+	year      = {2010},
+	url       = {http://dx.doi.org/10.1007/978-3-642-13190-5},
+	doi       = {10.1007/978-3-642-13190-5},
+	isbn      = {978-3-642-13189-9},
+	timestamp = {Tue, 08 Jun 2010 09:16:44 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/eurocrypt/2010},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/sp/BosCNS15,
+	author    = {Joppe W. Bos and
+	Craig Costello and
+	Michael Naehrig and
+	Douglas Stebila},
+	title     = {Post-Quantum Key Exchange for the {TLS} Protocol from the Ring Learning
+	with Errors Problem},
+	booktitle = {2015 {IEEE} Symposium on Security and Privacy, {SP} 2015},
+	pages     = {553--570},
+	year      = {2015},
+	crossref  = {DBLP:conf/sp/2015},
+	url       = {http://dx.doi.org/10.1109/SP.2015.40},
+	doi       = {10.1109/SP.2015.40},
+	timestamp = {Tue, 10 May 2016 13:48:00 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/sp/BosCNS15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/sp/2015,
+	title     = {2015 {IEEE} Symposium on Security and Privacy, {SP} 2015},
+	publisher = {{IEEE} Computer Society},
+	year      = {2015},
+	url       = {http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7160813},
+	isbn      = {978-1-4673-6949-7},
+	timestamp = {Tue, 10 May 2016 13:48:00 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/sp/2015},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/ches/0001SRGKV15,
+	author    = {Zhe Liu and
+	Hwajeong Seo and
+	Sujoy Sinha Roy and
+	Johann Gro{\ss}sch{\"{a}}dl and
+	Howon Kim and
+	Ingrid Verbauwhede},
+	title     = {Efficient Ring-LWE Encryption on 8-Bit {AVR} Processors},
+	booktitle = {{CHES} 2015},
+	pages     = {663--682},
+	year      = {2015},
+	crossref  = {DBLP:conf/ches/2015},
+	url       = {http://dx.doi.org/10.1007/978-3-662-48324-4_33},
+	doi       = {10.1007/978-3-662-48324-4_33},
+	timestamp = {Wed, 02 Sep 2015 14:13:31 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/0001SRGKV15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/ches/2015,
+	editor    = {Tim G{\"{u}}neysu and
+	Helena Handschuh},
+	title     = {{CHES} 2015},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {9293},
+	publisher = {Springer},
+	year      = {2015},
+	url       = {http://dx.doi.org/10.1007/978-3-662-48324-4},
+	doi       = {10.1007/978-3-662-48324-4},
+	isbn      = {978-3-662-48323-7},
+	timestamp = {Wed, 02 Sep 2015 14:12:53 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ches/2015},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@misc{steffenstrongswan,
+	author = {Steffen, Andreas},
+	title = {StrongSwan},
+	howpublished = "\url{http://www.strongswan. org}",
+	year = {2017}, 
+	note = "[Online; accessed 3-May-2017]"
+}
+
+
+
+@inproceedings{DBLP:conf/date/ClercqRVV15,
+	author    = {Ruan de Clercq and
+	Sujoy Sinha Roy and
+	Frederik Vercauteren and
+	Ingrid Verbauwhede},
+	title     = {Efficient software implementation of ring-LWE encryption},
+	booktitle = {{DATE} 2015},
+	pages     = {339--344},
+	year      = {2015},
+	crossref  = {DBLP:conf/date/2015},
+	url       = {http://dl.acm.org/citation.cfm?id=2755830},
+	timestamp = {Tue, 28 Apr 2015 17:32:23 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/date/ClercqRVV15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/date/2015,
+	editor    = {Wolfgang Nebel and
+	David Atienza},
+	title     = {{DATE} 2015},
+	publisher = {{ACM}},
+	year      = {2015},
+	url       = {http://dl.acm.org/citation.cfm?id=2755753},
+	isbn      = {978-3-9815370-4-8},
+	timestamp = {Tue, 28 Apr 2015 17:32:23 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/date/2015},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/dac/OderPG14,
+	author    = {Tobias Oder and
+	Thomas P{\"{o}}ppelmann and
+	Tim G{\"{u}}neysu},
+	title     = {Beyond {ECDSA} and {RSA:} Lattice-based Digital Signatures on Constrained
+	Devices},
+	booktitle = {{DAC} 2014},
+	pages     = {110:1--110:6},
+	year      = {2014},
+	crossref  = {DBLP:conf/dac/2014},
+	url       = {http://doi.acm.org/10.1145/2593069.2593098},
+	doi       = {10.1145/2593069.2593098},
+	timestamp = {Fri, 24 Apr 2015 14:24:52 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/dac/OderPG14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/dac/2014,
+	title     = {{DAC} 2014},
+	publisher = {{ACM}},
+	year      = {2014},
+	url       = {http://dl.acm.org/citation.cfm?id=2593069},
+	isbn      = {978-1-4503-2730-5},
+	timestamp = {Wed, 28 May 2014 08:42:43 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/dac/2014},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{DBLP:conf/pqcrypto/GuneysuOPS13,
+	author    = {Tim G{\"{u}}neysu and
+	Tobias Oder and
+	Thomas P{\"{o}}ppelmann and
+	Peter Schwabe},
+	title     = {Software Speed Records for Lattice-Based Signatures},
+	booktitle = {PQCrypto 2013},
+	pages     = {67--82},
+	year      = {2013},
+	crossref  = {DBLP:conf/pqcrypto/2013},
+	url       = {http://dx.doi.org/10.1007/978-3-642-38616-9_5},
+	doi       = {10.1007/978-3-642-38616-9_5},
+	timestamp = {Fri, 07 Jun 2013 20:15:32 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/pqcrypto/GuneysuOPS13},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/pqcrypto/2013,
+	editor    = {Philippe Gaborit},
+	title     = {PQCrypto 2013},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {7932},
+	publisher = {Springer},
+	year      = {2013},
+	url       = {http://dx.doi.org/10.1007/978-3-642-38616-9},
+	doi       = {10.1007/978-3-642-38616-9},
+	isbn      = {978-3-642-38615-2},
+	timestamp = {Fri, 07 Jun 2013 20:14:43 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/pqcrypto/2013},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{howe2018standard,
+  title={Standard Lattice-Based Key Encapsulation on Embedded Devices},
+  author={Howe, James and Oder, Tobias and Krausz, Markus and G{\"u}neysu, Tim},
+  journal={IACR Transactions on Cryptographic Hardware and Embedded Systems},
+  pages={372--393},
+  year={2018}
+}
+
+@article{howe2018practical,
+  title={On practical discrete gaussian samplers for lattice-based cryptography},
+  author={Howe, James and Khalid, Ayesha and Rafferty, Ciara and Regazzoni, Francesco and O'Neill, M{\'a}ire},
+  journal={IEEE Transactions on Computers},
+  volume={67},
+  number={3},
+  pages={322--334},
+  year={2018},
+  publisher={IEEE}
+}
+
+@inproceedings{DBLP:conf/dac/HoweMORGB16,
+	author    = {James Howe and
+	Ciara Moore and
+	M{\'{a}}ire O'Neill and
+	Francesco Regazzoni and
+	Tim G{\"{u}}neysu and
+	K. Beeden},
+	title     = {Standard lattices in hardware},
+	booktitle = {{DAC} 2016},
+	pages     = {162:1--162:6},
+	year      = {2016},
+	crossref  = {DBLP:conf/dac/2016},
+	url       = {http://doi.acm.org/10.1145/2897937.2898037},
+	doi       = {10.1145/2897937.2898037},
+	timestamp = {Thu, 14 Jul 2016 16:30:07 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/dac/HoweMORGB16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/dac/2016,
+	title     = {{DAC} 2016},
+	publisher = {{ACM}},
+	year      = {2016},
+	url       = {http://doi.acm.org/10.1145/2897937},
+	doi       = {10.1145/2897937},
+	isbn      = {978-1-4503-4236-0},
+	timestamp = {Fri, 27 May 2016 08:51:22 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/dac/2016},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{kamal2009fpga,
+	title={An FPGA implementation of the NTRUEncrypt cryptosystem},
+	author={Kamal, Abdel Alim and Youssef, Amr M},
+	booktitle={2009 International Conference on Microelectronics-ICM},
+	pages={209--212},
+	year={2009},
+	organization={IEEE}
+}
+
+
+
+@inproceedings{DBLP:conf/pqcrypto/BuchmannDH11,
+	author    = {Johannes A. Buchmann and
+	Erik Dahmen and
+	Andreas H{\"{u}}lsing},
+	title     = {{XMSS} - {A} Practical Forward Secure Signature Scheme Based on Minimal
+	Security Assumptions},
+	booktitle = {PQCrypto 2011},
+	pages     = {117--129},
+	year      = {2011},
+	crossref  = {DBLP:conf/pqcrypto/2011},
+	url       = {http://dx.doi.org/10.1007/978-3-642-25405-5_8},
+	doi       = {10.1007/978-3-642-25405-5_8},
+	timestamp = {Wed, 08 Apr 2015 16:21:37 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/pqcrypto/BuchmannDH11},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/pqcrypto/2011,
+	editor    = {Bo{-}Yin Yang},
+	title     = {Post-Quantum Cryptography - 4th International Workshop, PQCrypto 2011,
+	Taipei, Taiwan, November 29 - December 2, 2011. Proceedings},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {7071},
+	publisher = {Springer},
+	year      = {2011},
+	url       = {http://dx.doi.org/10.1007/978-3-642-25405-5},
+	doi       = {10.1007/978-3-642-25405-5},
+	isbn      = {978-3-642-25404-8},
+	timestamp = {Tue, 06 Dec 2011 17:43:12 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/pqcrypto/2011},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@incollection{DBLP:reference/algo/Micciancio16,
+	author    = {Daniele Micciancio},
+	title     = {Shortest Vector Problem},
+	booktitle = {Encyclopedia of Algorithms},
+	pages     = {1974--1977},
+	year      = {2016},
+	url       = {http://dx.doi.org/10.1007/978-1-4939-2864-4_374},
+	doi       = {10.1007/978-1-4939-2864-4_374},
+	timestamp = {Thu, 28 Apr 2016 16:05:47 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/reference/algo/Micciancio16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{lampret2001openrisc,
+	title={OpenRISC 1200 IP core specification},
+	author={Lampret, Damjan},
+	journal={September June},
+	year={2001}
+}
+
+
+@article{pozzi2006exact,
+	title={Exact and approximate algorithms for the extension of embedded processor instruction sets},
+	author={Pozzi, Laura and Atasu, Kubilay and Ienne, Paolo},
+	journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+	volume={25},
+	number={7},
+	pages={1209--1229},
+	year={2006},
+	publisher={IEEE}
+}
+@misc{cryptoeprint:2016:1157,
+    author = {Erdem Alkim and Léo Ducas and Thomas Pöppelmann and Peter Schwabe},
+    title = {NewHope without reconciliation},
+    howpublished = {Cryptology ePrint Archive, Report 2016/1157},
+    year = {2016},
+    note = {\url{https://eprint.iacr.org/2016/1157}},
+}
+
+@Inbook{Poppelmann2015,
+	author="P{\"o}ppelmann, Thomas
+	and Oder, Tobias
+	and G{\"u}neysu, Tim",
+	editor="Lauter, Kristin
+	and Rodr{\'i}guez-Henr{\'i}quez, Francisco",
+	title="High-Performance Ideal Lattice-Based Cryptography on 8-Bit ATxmega Microcontrollers",
+	bookTitle="Progress in Cryptology -- LATINCRYPT 2015: 4th International Conference on Cryptology and Information Security in Latin America, Guadalajara, Mexico, August 23-26, 2015, Proceedings",
+	year="2015",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="346--365",
+	isbn="978-3-319-22174-8",
+	doi="10.1007/978-3-319-22174-8_19",
+	url="http://dx.doi.org/10.1007/978-3-319-22174-8_19"
+}
+
+@Article{Saarinen2017,
+	author="Saarinen, Markku-Juhani O.",
+	title="Arithmetic coding and blinding countermeasures for lattice signatures ",
+	journal="Journal of Cryptographic Engineering",
+	year="2017",
+	pages="1--14",
+	abstract="We describe new arithmetic coding techniques and side-channel blinding countermeasures for lattice-based cryptography. Using these techniques, we develop a practical, compact, and more quantum-resistant variant of the BLISS Ideal Lattice Signature Scheme. We first show how the BLISS parameters and hash-based random oracle can be modified to be more secure against quantum pre-image attacks while optimizing signature size. Arithmetic Coding offers an information theoretically optimal compression for stationary and memoryless sources, such as the discrete Gaussian distributions often present in lattice-based cryptography. We show that this technique gives better signature sizes than the previously proposed advanced Huffman-based signature compressors. We further demonstrate that arithmetic decoding from an uniform source to target distribution is also an optimal non-uniform sampling method in the sense that a minimal amount of true random bits is required. Performance of this new Binary Arithmetic Coding sampler is comparable to other practical samplers. The same code, tables, or circuitry can be utilized for both tasks, eliminating the need for separate sampling and compression components. We then describe simple randomized blinding techniques that can be applied to anti-cyclic polynomial multiplication to mask timing- and power consumption side-channels in ring arithmetic. We further show that the Gaussian sampling process can also be blinded by a split-and-permute techniques as an effective countermeasure against side-channel attacks.",
+	issn="2190-8516",
+	doi="10.1007/s13389-017-0149-6",
+	url="http://dx.doi.org/10.1007/s13389-017-0149-6"
+}
+
+@Inbook{Hoffstein2017,
+	author="Hoffstein, Jeff
+	and Pipher, Jill
+	and Schanck, John M.
+	and Silverman, Joseph H.
+	and Whyte, William
+	and Zhang, Zhenfei",
+	editor="Handschuh, Helena",
+	title="Choosing Parameters for NTRUEncrypt    ",
+	bookTitle="Topics in Cryptology -- CT-RSA 2017: The Cryptographers' Track at the RSA Conference 2017, San Francisco, CA, USA, February 14--17, 2017, Proceedings",
+	year="2017",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="3--18",
+	isbn="978-3-319-52153-4",
+	doi="10.1007/978-3-319-52153-4_1",
+	url="http://dx.doi.org/10.1007/978-3-319-52153-4_1"
+}
+
+@misc{cryptoeprint:2014:874,
+	author = {Léo Ducas},
+	title = {Accelerating Bliss: the geometry of ternary polynomials},
+	howpublished = {Cryptology ePrint Archive, Report 2014/874},
+	year = {2014},
+	note = {\url{http://eprint.iacr.org/2014/874}},
+}
+
+
+@Inbook{Liu2015,
+	author="Liu, Zhe
+	and Seo, Hwajeong
+	and Sinha Roy, Sujoy
+	and Gro{\ss}sch{\"a}dl, Johann
+	and Kim, Howon
+	and Verbauwhede, Ingrid",
+	editor="G{\"u}neysu, Tim
+	and Handschuh, Helena",
+	title="Efficient Ring-LWE Encryption on 8-Bit AVR Processors",
+	bookTitle="Cryptographic Hardware and Embedded Systems -- CHES 2015: 17th International Workshop, Saint-Malo, France, September 13-16, 2015, Proceedings",
+	year="2015",
+	publisher="Springer Berlin Heidelberg",
+	address="Berlin, Heidelberg",
+	pages="663--682",
+	isbn="978-3-662-48324-4",
+	doi="10.1007/978-3-662-48324-4_33",
+	url="http://dx.doi.org/10.1007/978-3-662-48324-4_33"
+}
+
+@inproceedings{Rawat:2016:SIS:2948618.2948622,
+	author = {Rawat, Hemendra K. and Schaumont, Patrick},
+	title = {SIMD Instruction Set Extensions for Keccak with Applications to SHA-3, Keyak and Ketje},
+	booktitle = {Proceedings of the Hardware and Architectural Support for Security and Privacy 2016},
+	series = {HASP 2016},
+	year = {2016},
+	isbn = {978-1-4503-4769-3},
+	location = {Seoul, Republic of Korea},
+	pages = {4:1--4:8},
+	articleno = {4},
+	numpages = {8},
+	url = {http://doi.acm.org/10.1145/2948618.2948622},
+	doi = {10.1145/2948618.2948622},
+	acmid = {2948622},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {ARM NEON, Authenticated Encryption, Instruction Set Extensions, Keccak, SHA3, SIMD},
+}
+
+
+@misc{AESNI,
+  author = {Intel},
+  title = {{Intel Advanced Encryption Standard Instructions}},
+  howpublished = "\url{https://software.intel.com/en-us/articles/intel-advanced-encryption-standard-instructions-aes-ni}",
+  year = {2017}, 
+  note = "[Online; accessed 21-November-2017]"
+}
+
+@misc{RISCV,
+  author = {riscv.org},
+  title = {{RISC-V: The Free and Open RISC Instruction Set Architecture}},
+  howpublished = "\url{https://riscv.org/}",
+  year = {2017}, 
+  note = "[Online; accessed 21-November-2017]"
+}
+
+@misc{PULP,
+  author = {www.pulp-platform.org},
+  title = {{RISC-V: The Free and Open RISC Instruction Set Architecture}},
+  howpublished = "\url{http://www.pulp-platform.org/}",
+  year = {2017}, 
+  note = "[Online; accessed 21-November-2017]"
+}
+
+@misc{NandGate,
+  author = {Nangate Inc},
+  title = {{About NanGate}},
+  howpublished = "\url{http://www.nangate.com/?page_id=2325}",
+  year = {2017}, 
+  note = "[Online; accessed 21-November-2017]"
+}
+
+@misc{cryptoeprint:2016:276,
+    author = {Markku-Juhani O. Saarinen},
+    title = {Arithmetic coding and blinding countermeasures for lattice signatures},
+    howpublished = {Cryptology ePrint Archive, Report 2016/276},
+    year = {2016},
+    note = {\url{https://eprint.iacr.org/2016/276}},
+}
+
+
+@inproceedings{Clercq2015,
+  doi = {10.7873/date.2015.0378},
+  url = {https://doi.org/10.7873/date.2015.0378},
+  year  = {2015},
+  publisher = {{IEEE} Conference Publications},
+  author = {Ruan de Clercq and Sujoy Sinha Roy and Frederik Vercauteren and Ingrid Verbauwhede},
+  title = {Efficient Software Implementation of Ring-{LWE} Encryption},
+  booktitle = {Design,  Automation {\&} Test in Europe Conference {\&} Exhibition ({DATE}),  2015}
+}
+
+
+
+

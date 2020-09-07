@@ -1,0 +1,37 @@
+\section{Results} \label{sec:results}
+
+
+
+\begin{table}[htp]
+\centering
+    \advance\rightskip-1cm
+\begin{tabular}{|c|c|c|c|c|} \hline
+\textbf{FrodoKEM} & \multirow{2}{*}{\textbf{LUT/FF}} & \multirow{2}{*}{\textbf{Slices}}  & \textbf{DSP/} & \textbf{Ops/}  \\
+\textbf{Protocol} & & & \textbf{BRAM} & \textbf{Sec} \\ \hline
+
+KeyGen-640 1x & 3500/2000 & 1200 & 1/0 & 61 \\
+KeyGen-640 4x &  &  &  &  \\
+KeyGen-640 8x &  &  &  &  \\
+KeyGen-640 16x &  &  &  &  \\ \hline
+Encaps-640 1x &  &  &  &  \\
+Encaps-640 4x &  &  &  &  \\
+Encaps-640 8x &  &  &  &  \\
+Encaps-640 16x &  &  &  &  \\ \hline
+Decaps-640 1x &  &  &  &  \\
+Decaps-640 4x &  &  &  &  \\
+Decaps-640 8x &  &  &  &  \\
+Decaps-640 16x &  &  &  &  \\ \hline \hline
+KeyGen-976 1x &  &  &  &  \\
+KeyGen-976 4x &  &  &  &  \\
+KeyGen-976 8x &  &  &  &  \\
+KeyGen-976 16x &  &  &  &  \\ \hline
+Encaps-976 1x &  &  &  &  \\
+Encaps-976 4x &  &  &  &  \\
+Encaps-976 8x &  &  &  &  \\
+Encaps-976 16x &  &  &  &  \\ \hline
+Decaps-976 1x &  &  &  &  \\
+Decaps-976 4x &  &  &  &  \\
+Decaps-976 8x &  &  &  &  \\
+Decaps-976 16x &  &  &  & \\ \hline
+\end{tabular}
+\end{table}

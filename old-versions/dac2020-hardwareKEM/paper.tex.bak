@@ -1,0 +1,114 @@
+%\documentclass[sigconf,anonymous]{llncs}
+\documentclass[9pt]{IEEEtran}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{epstopdf}
+%\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage[toc,section=chapter]{glossaries}
+\usepackage{acronym}
+\usepackage{yfonts}
+\usepackage{listings}
+
+\usepackage{pdfpages}
+\usepackage{mwe}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{pgfplotstable}
+\usepackage{float}
+\usepackage{multirow}
+
+
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{algpseudocode}
+\usepackage[ruled, vlined, linesnumbered,algo2e,]{algorithm2e}
+\usepackage{booktabs}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz-timing}
+\usetikztiminglibrary[rising arrows]{clockarrows}
+\usetikzlibrary{positioning,patterns}
+
+\usepackage{graphicx}
+\usepackage{hhline}
+
+\usepackage{tabularx}
+
+
+\usepackage{numprint}
+\npdecimalsign{.}
+\npthousandsep{,}
+
+\usepackage{array,multirow,graphicx}
+\usepackage{float}
+
+\newcommand\Tstrut{\rule{0pt}{2.5ex}}    % = `top' strut
+\newcommand\Bstrut{\rule[-1ex]{0pt}{0pt}}   % = `bottom' strut
+
+\newcommand{\mailtodomain}[1]{\href{mailto:#1@bristol.ac.uk}{\nolinkurl{#1}}}
+\usepackage{etoolbox}
+
+\newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{y}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{z}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+\usepackage{adjustbox}
+\usepackage{booktabs}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{-0.251em}}}% no optional argument here, please!
+
+
+\begin{document}
+
+%\title{Optimised Lattice-Based Key Encapsulation in Hardware}
+\title{A Design Space Exploration for Optimizing Lattice-Based Key Encapsulation in Hardware}
+%
+%\author{\IEEEauthorblockN{James Howe}\textsuperscript{$\ast$}, \IEEEauthorblockN{Marco Martinoli}\textsuperscript{$\dagger$}, \IEEEauthorblockN{Elisabeth Oswald}\textsuperscript{$\ddagger$}, and \IEEEauthorblockN{Francesco Regazzoni}\textsuperscript{$\dagger$} \\
+%\IEEEauthorblockA{\textsuperscript{$\ast$}{PQShield Ltd.}, Oxford, United Kingdom.\\ {\href{mailto:james.howe@pqshield.com}{james.howe@pqshield.com}}} \\
+%\IEEEauthorblockA{\textsuperscript{$\dagger$}{Department of Computer Science}, {University of Bristol}, Bristol, UK. \\
+%\{\href{mailto:marco.martinoli@bristol.ac.uk}{marco.martinoli}, \href{mailto:elisabeth.oswald@bristol.ac.uk}{elisabeth.oswald}\}@bristol.ac.uk }\\
+%\IEEEauthorblockA{\textsuperscript{$\ddagger$}{Advanced Learning and Research Institute}, {Universit\`{a} della Svizzera Italiana}, Switzerland.\\ \href{mailto:regazzoni@alari.ch}{regazzoni@alari.ch} }
+%}
+
+%\{marco.martinoli,elisabeth.oswald\}@bristol.ac.uk} \\
+%\mailtodomain{\{marco.martinoli, elisabeth.oswald\}}@bristol.ac.uk} \\
+
+\author{%
+%James Howe\inst{1}  \and 
+%Marco Martinoli\inst{2} \and
+%Elisabeth Oswald\inst{2} \and 
+%Francesco Regazzoni\inst{3}
+%}%
+%\institute{
+%PQShield Ltd., Oxford, United Kingdom\\
+%\email{james.howe@pqshield.com},\\ 
+%\and
+%Department of Computer Science, University of Bristol, United Kingdom\\
+%\texttt{\{marco.martinoli,elisabeth.oswald\}@bristol.ac.uk}\\
+%\and
+%Advanced Learning and Research Institute, Universit\`{a} della Svizzera Italiana, Switzerland\\
+%\email{regazzoni@alari.ch}
+Anonymous
+}
+
+\maketitle
+\input{abstract}
+\input{intro}
+\input{related-works.tex}
+\input{design.tex}
+\input{results.tex}
+\input{conclusions.tex}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{IEEEtranS}
+\vspace{-0.2cm}
+\bibliography{bibliography}
+
+\end{document}

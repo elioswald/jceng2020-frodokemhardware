@@ -1,0 +1,67 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\AC@reset@newl@bel
+\citation{}
+\citation{}
+\citation{mceliece1978public}
+\citation{frodokem}
+\citation{??}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{cryptoeprint:2018:1116}
+\citation{??}
+\citation{howe2018standard}
+\providecommand\@newglossary[4]{}
+\@newglossary{main}{glg}{gls}{glo}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}}
+\newlabel{astract}{{}{1}{Abstract}{section*.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\newlabel{sec:Introdution}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{1}{section.2}}
+\newlabel{sec:related}{{2}{1}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Hardware Design}{1}{section.3}}
+\newlabel{sec:design}{{3}{1}{Hardware Design}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Hardware Optimisations}{1}{subsection.3.1}}
+\newlabel{lwe}{{1}{1}{Hardware Optimisations}{equation.3.1}{}}
+\citation{howe2018practical}
+\citation{howe2018standard}
+\bibstyle{ACM-Reference-Format}
+\bibdata{bibliography}
+\bibcite{cryptoeprint:2018:1116}{{1}{2018}{{Bos et~al\unhbox \voidb@x \hbox {.}}}{{Bos, Friedberger, Martinoli, Oswald, and Stam}}}
+\bibcite{howe2018practical}{{2}{2018a}{{Howe et~al\unhbox \voidb@x \hbox {.}}}{{Howe, Khalid, Rafferty, Regazzoni, and O\IeC {\textquoteright }Neill}}}
+\bibcite{howe2018standard}{{3}{2018b}{{Howe et~al\unhbox \voidb@x \hbox {.}}}{{Howe, Oder, Krausz, and G{\"u}neysu}}}
+\bibcite{mceliece1978public}{{4}{1978}{{McEliece}}{{McEliece}}}
+\bibcite{frodokem}{{5}{2017}{{Naehrig et~al\unhbox \voidb@x \hbox {.}}}{{Naehrig, Alkim, Bos, Ducas, Easterbrook, LaMacchia, Longa, Mironov, Nikolaenko, Peikert, Raghunathan, and Stebila}}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.185pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{0pt}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Parallelising matrix multiplication used within LWE computations for an example of $k=4$ parallel multiplications.\relax }}{2}{figure.caption.3}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{parallel}{{1}{2}{Parallelising matrix multiplication used within LWE computations for an example of $k=4$ parallel multiplications.\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Efficient First-Order Masking}{2}{subsection.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{2}{section.4}}
+\newlabel{sec:results}{{4}{2}{Results}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{2}{section.5}}
+\newlabel{sec:Conclusions}{{5}{2}{Conclusions}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{References}{2}{section*.6}}
+\newlabel{TotPages}{{2}{2}{}{page.2}{}}

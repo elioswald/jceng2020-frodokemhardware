@@ -1,0 +1,105 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\AC@reset@newl@bel
+\citation{}
+\citation{}
+\citation{nistpq}
+\citation{}
+\citation{}
+\citation{nistsca}
+\citation{frodokem}
+\citation{Regev05}
+\citation{frodoccs}
+\citation{frodokem}
+\providecommand\@newglossary[4]{}
+\@newglossary{main}{glg}{gls}{glo}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}}
+\newlabel{astract}{{}{1}{Abstract}{section*.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\newlabel{sec:Introdution}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Related Work}{1}{section.2}}
+\newlabel{sec:related}{{2}{1}{Background and Related Work}{section.2}{}}
+\citation{howe2018standard}
+\citation{nistsca}
+\citation{frodokem}
+\citation{nistpq}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{cryptoeprint:2018:1116}
+\citation{de2008trivium}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Implemented \textsf  {FrodoKEM} parameter sets.\relax }}{2}{table.caption.3}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:params}{{1}{2}{Implemented \textsf {FrodoKEM} parameter sets.\relax }{table.caption.3}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces The \textsf  {FrodoKEM} encapsulation\relax }}{2}{algorithm.1}}
+\newlabel{alg:encaps}{{1}{2}{The \textsf {FrodoKEM} encapsulation\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Side-Channel Analysis}{2}{subsection.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Hardware Design}{2}{section.3}}
+\newlabel{sec:design}{{3}{2}{Hardware Design}{section.3}{}}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018practical}
+\citation{howe2018standard}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Hardware Optimisations}{3}{subsection.3.1}}
+\newlabel{lwe}{{1}{3}{Hardware Optimisations}{equation.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A high-level overview of the proposed hardware designs for FrodoKEM for $k$ parallel multipliers.\relax }}{3}{figure.caption.4}}
+\newlabel{arch}{{1}{3}{A high-level overview of the proposed hardware designs for FrodoKEM for $k$ parallel multipliers.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Parallelising matrix multiplication, for $\mathbf  {S}\times \mathbf  {A}$, used within LWE computations for an example of $k=4$ parallel multiplications.\relax }}{3}{figure.caption.5}}
+\newlabel{parallel}{{2}{3}{Parallelising matrix multiplication, for $\mathbf {S}\times \mathbf {A}$, used within LWE computations for an example of $k=4$ parallel multiplications.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Efficient First-Order Masking}{3}{subsection.3.2}}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{howe2018standard}
+\citation{frodokem}
+\citation{howe2018standard}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}}
+\newlabel{sec:results}{{4}{4}{Results}{section.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces FPGA resource consumption of the proposed FrodoKEM hardware designs, using Trivium as a PRNG, with 1, 4, 8, or 16 parallel multipliers and also using both parameter sets FrodoKEM-640 and FrodoKEM976. Results with BRAM usage have an asterisk (*). Also shown are the hardware results of Trivium and the error sampler. All results utilise a Xilinx Artix-7 FPGA\relax }}{4}{table.caption.6}}
+\bibstyle{ACM-Reference-Format}
+\bibdata{bibliography}
+\bibcite{frodoccs}{{1}{2016}{{Bos et~al\unhbox \voidb@x \hbox {.}}}{{Bos, Costello, Ducas, Mironov, Naehrig, Nikolaenko, Raghunathan, and Stebila}}}
+\bibcite{cryptoeprint:2018:1116}{{2}{2018}{{Bos et~al\unhbox \voidb@x \hbox {.}}}{{Bos, Friedberger, Martinoli, Oswald, and Stam}}}
+\bibcite{de2008trivium}{{3}{2008}{{De~Canniere and Preneel}}{{De~Canniere and Preneel}}}
+\bibcite{howe2018practical}{{4}{2018a}{{Howe et~al\unhbox \voidb@x \hbox {.}}}{{Howe, Khalid, Rafferty, Regazzoni, and O'Neill}}}
+\bibcite{howe2018standard}{{5}{2018b}{{Howe et~al\unhbox \voidb@x \hbox {.}}}{{Howe, Oder, Krausz, and G{\"u}neysu}}}
+\bibcite{frodokem}{{6}{2017}{{Naehrig et~al\unhbox \voidb@x \hbox {.}}}{{Naehrig, Alkim, Bos, Ducas, Easterbrook, LaMacchia, Longa, Mironov, Nikolaenko, Peikert, Raghunathan, and Stebila}}}
+\bibcite{nistpq}{{7}{2016a}{{NIST}}{{NIST}}}
+\bibcite{nistsca}{{8}{2016b}{{NIST}}{{NIST}}}
+\bibcite{Regev05}{{9}{2005}{{Regev}}{{Regev}}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.185pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{0pt}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Visualisation of FPGA slice consumption of FrodoKEM's key generation, encapsulation, \& decapsulation on a Xilinx Artix-7. Decaps values overlap to show results with (*) and without BRAM.\relax }}{5}{figure.caption.7}}
+\newlabel{fig:hw}{{3}{5}{Visualisation of FPGA slice consumption of FrodoKEM's key generation, encapsulation, \& decapsulation on a Xilinx Artix-7. Decaps values overlap to show results with (*) and without BRAM.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of the throughput performance per FPGA slice on a Xilinx Artix-7.\relax }}{5}{figure.caption.8}}
+\newlabel{fig:hw_line}{{4}{5}{Comparison of the throughput performance per FPGA slice on a Xilinx Artix-7.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{5}{section.5}}
+\newlabel{sec:conclusions}{{5}{5}{Conclusions}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{References}{5}{section*.10}}
+\newlabel{TotPages}{{5}{5}{}{page.5}{}}

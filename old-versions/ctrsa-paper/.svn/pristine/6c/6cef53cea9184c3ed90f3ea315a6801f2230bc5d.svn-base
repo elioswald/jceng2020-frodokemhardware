@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bibliography.bib
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "??"
+Warning--I didn't find a database entry for "de2008trivium"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no number and no volume in howe2018standard
+You've used 5 entries,
+            5795 wiz_defined-function locations,
+            1345 strings with 16600 characters,
+and the built_in function-call counts, 6478 in all, are:
+= -- 820
+> -- 337
+< -- 0
++ -- 116
+- -- 112
+* -- 530
+:= -- 731
+add.period$ -- 28
+call.type$ -- 5
+change.case$ -- 48
+chr.to.int$ -- 4
+cite$ -- 6
+duplicate$ -- 466
+empty$ -- 333
+format.name$ -- 127
+if$ -- 1514
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 12
+newline$ -- 84
+num.names$ -- 39
+pop$ -- 167
+preamble$ -- 1
+purify$ -- 90
+quote$ -- 0
+skip$ -- 161
+stack$ -- 0
+substring$ -- 426
+swap$ -- 49
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 105
+warning$ -- 1
+while$ -- 33
+width$ -- 0
+write$ -- 129
+(There were 4 warnings)

@@ -1,0 +1,5 @@
+\begin{abstract} \label{astract}
+
+Recently, a standard lattice-based key encapsulation mechanism has been shown to have promising performance on FPGA. The cryptographic scheme, named FrodoKEM, is one of many candidates for NIST's call for post-quantum standardisation. This research proposes optimised designs for FrodoKEM, concentrating on high throughput by paralleling the matrix multiplication operations within the scheme. This process is eased by the use of a much smaller and faster PRNG. The parallelisations proposed also complement the addition of first-order masking to the decapulation module. Overall, we significantly increase the throughput of FrodoKEM, achieving up to 840 operations per second, with almost no impact on the FPGA area consumption compared to the previous state-of-the-art.
+
+\end{abstract}

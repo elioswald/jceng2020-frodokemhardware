@@ -1,0 +1,47 @@
+\section{Hardware Design} \label{sec:design}
+
+The main focus of this research is to improve the throughput of the lattice-based key encapsulation scheme, FrodoKEM \cite{frodokem}, in hardware. As described in Section \ref{??}, FrodoKEM is one of the leading conservative candidates submitted to the NIST post-quantum standardisation effort \cite{nistpq}. Moreover, it has been shown to have appealing qualities which make it an ideal candidate for optimised hardware implementations \cite{howe2018standard}, however this previous implementation does not consider parallelisation nor alternative design options which can significantly improve the throughput of the design.
+
+As described in Section \ref{sec:related}, FrodoKEM requires heavy use of PRNGs, which in the specifications it is suggest to either use cSHAKE or AES. In particular, the most computationally intensive computations, Line ?? of Algorithm ??, requires $640\times 640$ 16-bit pseudo-random values. In order for the PRNG not to be the bottle-neck of the schemes, these modules require high throughput. In the previous hardware design by Howe et al. \cite{howe2018standard}, this was achieved only by pre-calculating randomness and storing it in BRAM, any new randomness calculated was then overwritten into the memory. This is an efficient approach, however utilising an alternative PRNG that would not require BRAM usage has the potential to increase the operating frequency of the design and thus improve its throughput.
+
+Another issue with the use of AES or cSHAKE is the relatively large amounts of area it consumes on the device. For example, cSHAKE used within FrodoKEM-640 Encaps uses 42\% of the overall required hardware resources in the design by Howe et al. \cite{howe2018standard}. Bos et al. \cite{cryptoeprint:2018:1116} recently improved the throughput of a software implementation of FrodoKEM by using an alternative PRNG; xoshiro128**. We further this idea to hardware and replace the suggested PRNG, instead integrating an unrolled x32 Trivium \cite{de2008trivium} module. The authors suggest that replacing the PRNG with another, that still has good statistical pseudo-randomness, ensures the security claims of FrodoKEM. The Trivium design we integrate has high throughput and maintains the cryptographic security required in the FrodoKEM specifications. The primary reason the proposed designs have achieved both high throughput and practical area consumption is through this idea of replacing the PRNG.
+
+\subsection{Hardware Optimisations}
+
+In order to fully comprehend the potential of FrodoKEM in hardware, we propose a number of designs which achieve different throughput goals and also implement this across key generation, encapsulation, and decapsulation, on both sets of parameters proposed in the specifications: FrodoKEM-640 and FrodoKEM-976. Our throughput designs utilise 1x, 4x, 8x, and 16x parallel multiplications during the most computationally intensive parts in FrodoKEM. This is the LWE calculation of the type: 
+\begin{equation}
+\mathbf{B} = \mathbf{S} \mathbf{A} + \mathbf{E}, \label{lwe}
+\end{equation}
+ required in key generation, encapsulation, and decapsulation, which takes at least 97.5\% of the overall computations. Like the previous hardware design of FrodoKEM \cite{howe2018standard}, we exploit the DSP slices on the FPGA for the multi-and-accumulate (MAC) operations required during matrix multiplication. Hence, each parallel multiplication of the proposed designs uses its own DSP slice.
+
+Due to the LWE matrix multiplication component consuming almost all of the required calculations, it makes sense to focus on optimising this operation. First we will described the basic LWE multiplier which uses just one multiplication component, then we will described how this core is parallelised.
+
+The LWE core is essentially made up of vector-matrix multiplication (that is, $\mathbf{S}[\text{row}]\times \mathbf{A}$), addition of an error (that is, $\mathbf{E}$), and if needed an addition of the encoding of message data. Because the matrix $\mathbf{S}$ consists of a large number of column entries (either 640 or 976) but only 8 row entries (for both parameter sets), we instead opt for a vector-matrix multiplier, instead of matrix-matrix. By doing this, we can reuse the same hardware architecture for each row of $\mathbf{S}$, saving significant hardware resources. Each run of the row-column MAC operation exploits a DSP slice on the FPGA, which fits within the 48-bit MAC size of the FPGA. The DSP slice is ideal for these operations, but also it ensures constant runtime due to each multiplication always requiring one clock cycle. Once each row-column MAC operation is completed, an error value is added from the CDT sampler. These values are consistently added into an instantiation of cSHAKE, which is required to calculate the shared secret, as well as being output as the ciphertext. This process is pipelined to ensure high throughput and constant runtime of the design, a high-level overview is shown in Figure \ref{arch}.
+
+\begin{figure}[htbp]
+    %\advance\leftskip-1cm
+\includegraphics[scale=0.8]{figures/arch.pdf}
+\caption{A high-level overview of the proposed hardware designs for FrodoKEM for $k$ parallel multipliers.}\label{arch}
+\end{figure}
+
+%cSHAKE is still required for RO, this can be done in parallel to the next KEM calculation.
+
+In order to circumvent the use of BRAM and to keep up with the MAC operations of matrix multiplications, the designs require 16 bits of pseduo-randomness per multiplication per clock cycle. Thus, for each parallel multiplication we require one Trivium instantiation, whose 32-bit output per clock cycle is split up to form two 16-bit pseudo-random integers. This pseudo-randomness forms the matrix $\mathbf{A}$ in Equation \ref{lwe}, whereas the matrix $\mathbf{S}$ and $\mathbf{E}$ require randomness taken from a Gaussian-like distribution. The cumulative distribution table (CDT) sampler technique has been shown in previous research to perform the best in hardware  \cite{howe2018practical}, which is similar to the error sampler used by Howe et al. \cite{howe2018standard}. However we change their use of AES as a psuedo-random input with Trvium, which ensures the same high throughput performances, but requires significantly less area on the FPGA.
+
+\begin{figure}[htbp]
+    %\advance\leftskip-1cm
+\includegraphics[scale=0.5]{figures/parallel.pdf}
+\caption{Parallelising matrix multiplication, for $\mathbf{S}\times\mathbf{A}$, used within LWE computations for an example of $k=4$ parallel multiplications.}\label{parallel}
+\end{figure}
+
+Overall, the technique we use to parallelise Equation \ref{lwe} is to vertically partition the matrix $\mathbf{A}$ into $k$ equal sections, where $k$ is the number of parallel multiplications used. This is shown in Figure \ref{parallel} for $k=4$ parallel multiplications, utilising 4 DSP slices for MAC. Each vector on the LHS of Figure \ref{parallel} remains the same for each of the $k$ operations. We repeat this vector-matrix operation for the $\bar{n}=8$ rows of the matrix $\mathbf{S}$. This technique is used across all designs for the three cryptographic modules to ensure consistency. %For each multiplication 
+
+In order to produce enough randomness for these multiplications to have no delays, we require one instance of our PRNG, Trivium, for every two parallel multiplications. This is because each element of the matrix $\mathbf{A}$ is set to be a 16-bit integer and each output from Trivium is 32 bits, that is, two 16-bit integers. 
+
+\subsection{Efficient First-Order Masking}
+
+
+
+
+
+

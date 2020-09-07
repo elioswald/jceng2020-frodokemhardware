@@ -1,0 +1,21 @@
+\section{Related Work} \label{sec:related}
+
+
+
+
+
+
+%%%%% masking discussion
+
+Masking is one of the most widespread and better understood techniques to protect
+against passive side-channel attacks. In its most basic form, a mask is drawn
+uniformly from random and added to the secret. The resulting masked value, which is
+effectively a one-time-pad, and the mask are jointly called \emph{shares}: if taken
+singularly they are statistically independent from the secret, and they must be
+combined to obtain the secret back. Any operation that previously involved the secret
+has to be turned into an operation over its shares. As long as they are not combined,
+any leakage from them will be statistically independent of the secret too. In our
+context, we show how masking can easily applied to FrodoKEM at a very low cost. We
+therefore argue the overhead that a protected implementation of FrodoKEM in hardware
+is minimal, hence making it a strong candidate when side-channel analysis are a
+concern.

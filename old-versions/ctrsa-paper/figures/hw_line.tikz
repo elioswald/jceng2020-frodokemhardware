@@ -1,0 +1,60 @@
+  \begin{tikzpicture}
+	\begin{axis}[
+		xlabel=Number of DSP Multipliers,
+		ylabel=Operations per second per Slice,
+		line width=0.25mm,
+		xtick={0,1,2,3},
+		xticklabels={1,4,8,16},
+		legend style={at={(0.45,1.15)}}
+]
+	\addplot[color=green!60,mark=x] coordinates {
+		(0,0.203448275862069)	
+		(1,0.636619718309859)
+		(2,0.836466165413534)
+		(3,0.982456140350877)
+	};
+	\addplot[color=blue!60,mark=x] coordinates {
+		(0,0.049152542372881)
+		(1,0.165171898355755)
+		(2,0.287542087542088)
+		(3,0.48758865248227)
+	};
+	\addplot[color=red!60,mark=x] coordinates {
+		(0,0.019434026593931)
+		(1,0.060747663551402)
+		(2,0.105390835579515)
+		(3,0.22636815920398)
+	};
+	\addplot[color=orange!60,mark=x] coordinates {
+		(0,0.039074960127592)
+		(1,0.14275092936803)
+		(2,0.238767650834403)
+		(3,0.364663585002568)
+	};
+	\addplot[color=green!60,mark=x,dashed] coordinates {
+		(0,0.069060773480663)	
+		(1,0.220454545454545)
+		(2,0.303079416531604)
+		(3,0.390969162995595)
+	};
+	\addplot[color=blue!60,mark=x,dashed] coordinates {
+		(0,0.019654088050315)
+		(1,0.064604810996564)
+		(2,0.113805970149254)
+		(3,0.196408529741863)
+	};
+	\addplot[color=red!60,mark=x,dashed] coordinates {
+		(0,0.006319514661274)
+		(1,0.018932874354561)
+		(2,0.033500501504514)
+		(3,0.061623056503603)
+	};
+	\addplot[color=orange!60,mark=x,dashed] coordinates {
+		(0,0.015107913669065)
+		(1,0.057241379310345)
+		(2,0.09969040247678)
+		(3,0.149853085210578)
+	};
+    \legend{KeyGen-640,Encaps-640,Decaps-640,*Decaps-640,KeyGen-976,Encaps-976,Decaps-976,*Decaps-976}
+	\end{axis}
+\end{tikzpicture}

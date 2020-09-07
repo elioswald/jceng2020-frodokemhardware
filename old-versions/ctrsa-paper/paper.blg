@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
+The style file: alpha.bst
+Database file #1: bibliography.bib
+Warning--string name "october" is undefined
+--line 42 of file bibliography.bib
+A bad cross reference---entry "Regev05"
+refers to entry "DBLP:conf/stoc/2005", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/stoc/2005"
+Warning--empty author in ISO
+You've used 25 entries,
+            2543 wiz_defined-function locations,
+            705 strings with 10075 characters,
+and the built_in function-call counts, 11847 in all, are:
+= -- 1178
+> -- 688
+< -- 16
++ -- 252
+- -- 248
+* -- 851
+:= -- 1929
+add.period$ -- 87
+call.type$ -- 25
+change.case$ -- 198
+chr.to.int$ -- 23
+cite$ -- 26
+duplicate$ -- 425
+empty$ -- 782
+format.name$ -- 267
+if$ -- 2452
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 135
+num.names$ -- 74
+pop$ -- 219
+preamble$ -- 1
+purify$ -- 221
+quote$ -- 0
+skip$ -- 381
+stack$ -- 0
+substring$ -- 542
+swap$ -- 116
+text.length$ -- 16
+text.prefix$ -- 6
+top$ -- 0
+type$ -- 200
+warning$ -- 1
+while$ -- 102
+width$ -- 29
+write$ -- 339
+(There was 1 error message)

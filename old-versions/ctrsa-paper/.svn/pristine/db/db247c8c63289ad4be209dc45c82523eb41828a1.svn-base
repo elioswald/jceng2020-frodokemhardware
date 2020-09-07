@@ -1,0 +1,223 @@
+%% annotations.sty
+%% V0.3
+%% 2012/10/19
+%% by Christian Pilato
+
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+\usepackage[colorinlistoftodos, textwidth=4cm, shadow]{todonotes}
+\definecolor{Yellow}{rgb}{1,0.9,0.7}
+\definecolor{BoxColor}{rgb}{0.8,0.9,0.9}
+\definecolor{Pink}{rgb}{1,0.85,0.85}
+\definecolor{AntiqueWhite}{rgb}{0.9,0.9,0.9}
+\definecolor{White}{rgb}{1.0,1.0,1.0}
+\usepackage[normalem]{ulem}
+%\usepackage{soul}
+
+\newcommand{\here}{{\centering \line(1,0){55}\fbox{up to here}\line(1,0){55}\newline}}
+
+\ifdefined\final % for final version
+\newcommand{\TODON}[2]{}
+
+\newcommand{\MSG}[2]{}
+
+\newcommand{\NOTE}[1]{}
+
+\newcommand{\vsp}[1]{}
+
+\newcommand{\BOX}[3]{}
+
+\newcommand{\TODO}[1]{}
+
+\newcommand{\ToBeRevised}[1]{}
+
+\newcommand{\ToBeIntegrated}[1]{}
+
+\newcommand{\TBR}[1]{#1}
+
+%\newcommand{\HL}[1]{#1}
+%
+%\newcommand{\CHANGE}[1]{#1}
+
+\newcommand{\newp}{}
+
+\else % for draft version
+
+%\usepackage{soul}
+%\usepackage{tikz}
+%\usetikzlibrary{calc}
+%\usetikzlibrary{decorations.pathmorphing}
+%
+%\makeatletter
+%
+%\newcommand{\defhighlighter}[3][]{%
+%  \tikzset{every highlighter/.style={color=#2, fill opacity=#3, #1}}%
+%}
+%
+%\defhighlighter{yellow}{.5}
+%
+%\newcommand{\highlight@DoHighlight}{
+%  \fill [ decoration = {random steps, amplitude=1pt, segment length=15pt}
+%        , outer sep = -15pt, inner sep = 0pt, decorate
+%        , every highlighter, this highlighter ]
+%        ($(begin highlight)+(0,8pt)$) rectangle ($(end highlight)+(0,-3pt)$) ;
+%}
+%
+%\newcommand{\highlight@BeginHighlight}{
+%  \coordinate (begin highlight) at (0,0) ;
+%}
+%
+%\newcommand{\highlight@EndHighlight}{
+%  \coordinate (end highlight) at (0,0) ;
+%}
+%
+%\newdimen\highlight@previous
+%\newdimen\highlight@current
+%
+%\DeclareRobustCommand*\highlight[1][]{%
+%  \tikzset{this highlighter/.style={#1}}%
+%  \SOUL@setup
+%  %
+%  \def\SOUL@preamble{%
+%    \begin{tikzpicture}[overlay, remember picture]
+%      \highlight@BeginHighlight
+%      \highlight@EndHighlight
+%    \end{tikzpicture}%
+%  }%
+%  %
+%  \def\SOUL@postamble{%
+%    \begin{tikzpicture}[overlay, remember picture]
+%      \highlight@EndHighlight
+%      \highlight@DoHighlight
+%    \end{tikzpicture}%
+%  }%
+%  %
+%  \def\SOUL@everyhyphen{%
+%    \discretionary{%
+%      \SOUL@setkern\SOUL@hyphkern
+%      \SOUL@sethyphenchar
+%      \tikz[overlay, remember picture] \highlight@EndHighlight ;%
+%    }{%
+%    }{%
+%      \SOUL@setkern\SOUL@charkern
+%    }%
+%  }%
+%  %
+%  \def\SOUL@everyexhyphen##1{%
+%    \SOUL@setkern\SOUL@hyphkern
+%    \hbox{##1}%
+%    \discretionary{%
+%      \tikz[overlay, remember picture] \highlight@EndHighlight ;%
+%    }{%
+%    }{%
+%      \SOUL@setkern\SOUL@charkern
+%    }%
+%  }%
+%  %
+%  \def\SOUL@everysyllable{%
+%    \begin{tikzpicture}[overlay, remember picture]
+%      \path let \p0 = (begin highlight), \p1 = (0,0) in \pgfextra
+%        \global\highlight@previous=\y0
+%        \global\highlight@current =\y1
+%      \endpgfextra (0,0) ;
+%      \ifdim\highlight@current < \highlight@previous
+%        \highlight@DoHighlight
+%        \highlight@BeginHighlight
+%      \fi
+%    \end{tikzpicture}%
+%    \the\SOUL@syllable
+%    \tikz[overlay, remember picture] \highlight@EndHighlight ;%
+%  }%
+%  \SOUL@
+%}
+%\makeatother
+%
+%\usepackage{xcolor}
+%\usepackage{calc}
+%\usepackage[dvips]{geometry}
+%\usepackage{vmargin}
+%
+%\setpapersize{A5}
+%\setmarginsrb{0cm}{1.5cm}{0cm}{1.5cm}{0.5cm}{0.2cm}{1cm}{1cm}
+%\setlength{\parindent}{0pt}
+%\pagestyle{plain}
+%
+%\newcommand{\asays}[1]{\colorbox{Beige}{
+%    \parbox{\paperwidth}{
+%        \hangindent=1.5cm \hangafter=0 \parbox{\paperwidth-3cm}{A: #1}}
+%    }\\}
+%\newcommand{\bsays}[1]{\colorbox{Bisque}{
+%    \parbox{\paperwidth}{
+%        \hangindent=1.5cm \hangafter=0 \parbox{\paperwidth-3cm}{B: #1}}
+%    }\\}
+%
+%\newcommand{\HL}[1]
+%{
+%\highlight[green, draw=blue]{#1}
+%}
+%
+%\newcommand{\CHANGE}[1]
+%{
+%\highlight[red]{#1}
+%}
+
+\newcommand{\TODON}[2]
+{
+\todo[inline]{\textbf{[#1]: } #2}
+}
+
+\newcommand{\MSG}[2]
+{
+\noindent
+\fboxsep=2mm\fcolorbox{black}{Yellow}{\parbox{0.95\columnwidth}
+{\textbf{[#1]: } #2}
+}~\newline
+}
+
+\newcommand{\BOX}[3]
+{
+\centering\fboxsep=2mm\fcolorbox{black}{BoxColor}{\parbox[c][#1][c]{0.90#2}
+{#3}
+}\newline
+}
+
+\newcommand{\NOTE}[1]%
+{
+\noindent
+\fboxsep=2mm\fcolorbox{red}{White}{\parbox{0.90\columnwidth}
+{\color{red}{#1}}\newline
+}
+}
+
+\newcommand{\newp}{~\newpage}
+
+\newcommand{\vsp}[1]{~\vspace{#1}}
+
+\newcommand{\TODO}[1]%
+{
+\todo[inline]{#1}
+}
+
+\newcommand{\ToBeRevised}[1]%
+{
+\noindent
+\fboxsep=2mm\fcolorbox{black}{Yellow}{\parbox{0.95\columnwidth}
+{\textbf{To Be Revised: } #1}
+}
+}
+
+\newcommand{\ToBeIntegrated}[1]%
+{
+\noindent
+\fboxsep=2mm\fcolorbox{black}{Pink}{\parbox{0.95\columnwidth}
+{\textbf{To Be Integrated: } #1}
+}
+}
+
+\newcommand{\TBR}[1]%
+{
+{\color{red}{{#1}}}
+}
+
+\fi
+

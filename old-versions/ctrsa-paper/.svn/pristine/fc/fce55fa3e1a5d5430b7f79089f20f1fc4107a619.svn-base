@@ -1,0 +1,124 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{6}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Bos, Friedberger, Martinoli, Oswald, and
+  Stam}{Bos et~al\mbox{.}}{2018}]%
+        {cryptoeprint:2018:1116}
+\bibfield{author}{\bibinfo{person}{Joppe~W. Bos}, \bibinfo{person}{Simon
+  Friedberger}, \bibinfo{person}{Marco Martinoli}, \bibinfo{person}{Elisabeth
+  Oswald}, {and} \bibinfo{person}{Martijn Stam}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Fly, you fool! Faster Frodo for the ARM Cortex-M4}.
+\newblock \bibinfo{howpublished}{Cryptology ePrint Archive, Report 2018/1116}.
+   (\bibinfo{year}{2018}).
+\newblock
+\newblock
+\shownote{\url{https://eprint.iacr.org/2018/1116}.}
+
+
+\bibitem[\protect\citeauthoryear{De~Canniere and Preneel}{De~Canniere and
+  Preneel}{2008}]%
+        {de2008trivium}
+\bibfield{author}{\bibinfo{person}{Christophe De~Canniere} {and}
+  \bibinfo{person}{Bart Preneel}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Trivium}.
+\newblock In \bibinfo{booktitle}{{\em New Stream Cipher Designs}}.
+  \bibinfo{publisher}{Springer}, \bibinfo{pages}{244--266}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Howe, Khalid, Rafferty, Regazzoni, and
+  O'Neill}{Howe et~al\mbox{.}}{2018a}]%
+        {howe2018practical}
+\bibfield{author}{\bibinfo{person}{James Howe}, \bibinfo{person}{Ayesha
+  Khalid}, \bibinfo{person}{Ciara Rafferty}, \bibinfo{person}{Francesco
+  Regazzoni}, {and} \bibinfo{person}{M{\'a}ire O'Neill}.}
+  \bibinfo{year}{2018}\natexlab{a}.
+\newblock \showarticletitle{On practical discrete gaussian samplers for
+  lattice-based cryptography}.
+\newblock \bibinfo{journal}{{\it IEEE Trans. Comput.}} \bibinfo{volume}{67},
+  \bibinfo{number}{3} (\bibinfo{year}{2018}), \bibinfo{pages}{322--334}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Howe, Oder, Krausz, and G{\"u}neysu}{Howe
+  et~al\mbox{.}}{2018b}]%
+        {howe2018standard}
+\bibfield{author}{\bibinfo{person}{James Howe}, \bibinfo{person}{Tobias Oder},
+  \bibinfo{person}{Markus Krausz}, {and} \bibinfo{person}{Tim G{\"u}neysu}.}
+  \bibinfo{year}{2018}\natexlab{b}.
+\newblock \showarticletitle{Standard Lattice-Based Key Encapsulation on
+  Embedded Devices}.
+\newblock \bibinfo{journal}{{\em IACR Transactions on Cryptographic Hardware
+  and Embedded Systems\/}} (\bibinfo{year}{2018}), \bibinfo{pages}{372--393}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Naehrig, Alkim, Bos, Ducas, Easterbrook,
+  LaMacchia, Longa, Mironov, Nikolaenko, Peikert, Raghunathan, and
+  Stebila}{Naehrig et~al\mbox{.}}{2017}]%
+        {frodokem}
+\bibfield{author}{\bibinfo{person}{Michael Naehrig}, \bibinfo{person}{Erdem
+  Alkim}, \bibinfo{person}{Joppe Bos}, \bibinfo{person}{Leo Ducas},
+  \bibinfo{person}{Karen Easterbrook}, \bibinfo{person}{Brian LaMacchia},
+  \bibinfo{person}{Patrick Longa}, \bibinfo{person}{Ilya Mironov},
+  \bibinfo{person}{Valeria Nikolaenko}, \bibinfo{person}{Christopher Peikert},
+  \bibinfo{person}{Ananth Raghunathan}, {and} \bibinfo{person}{Douglas
+  Stebila}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em FrodoKEM}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}.
+  \bibinfo{institution}{{N}ational {I}nstitute of {S}tandards and
+  {T}echnology}.
+\newblock
+\newblock
+\shownote{available at
+  \url{https://csrc.nist.gov/projects/post-quantum-cryptography/round-1-submissions}.}
+
+
+\bibitem[\protect\citeauthoryear{NIST}{NIST}{2016}]%
+        {nistpq}
+\bibfield{author}{\bibinfo{person}{NIST}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Post-Quantum Crypto Project}.
+\newblock
+  \bibinfo{howpublished}{\url{http://csrc.nist.gov/groups/ST/post-quantum-crypto/}}.
+    (\bibinfo{year}{2016}).
+\newblock
+
+
+\end{thebibliography}

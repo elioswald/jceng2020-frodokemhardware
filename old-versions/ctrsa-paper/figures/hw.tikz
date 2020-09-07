@@ -1,0 +1,43 @@
+    \pgfplotstableread{ % data 
+Label              KeyGen    Encaps    *Decaps  Decaps
+%FrodoKEM-640-1x    290       1180      2933
+%FrodoKEM-640-4x    355       1338      3424
+%FrodoKEM-640-8x    532       1485      3710
+%FrodoKEM-640-16x   855       1692      4020
+%FrodoKEM-976-1x    362       1272      3956
+%FrodoKEM-976-4x    440       1455      4648
+%FrodoKEM-976-8x    617       1608      4985
+%FrodoKEM-976-16x   908       1782      5274
+FrodoKEM-640-1x    290       1180      1254	1679
+FrodoKEM-640-4x    355       1338      1345	2079
+FrodoKEM-640-8x    532       1485      1558	2152
+FrodoKEM-640-16x   855       1692      1947	2073
+FrodoKEM-976-1x    362       1272      1390	2566
+FrodoKEM-976-4x    440       1455      1450	3198
+FrodoKEM-976-8x    617       1608      1615	3370
+FrodoKEM-976-16x   908       1782      2042	3232
+    }\testdata
+
+    \begin{tikzpicture}
+
+    \begin{axis}[
+    xbar stacked,   % Stacked horizontal bars
+    xmin=0,         % Start x axis at 0
+    ytick=data,     % Use as many tick labels as y coordinates
+    xlabel=Number of FPGA Slices,
+    legend style={at={(axis cs:6200,-0.25)},anchor=south west},
+    yticklabels from table={\testdata}{Label}  % Get the labels from the Label column of the \datatable
+    %symbolic y coords = {FrodoKEM-640-1x,FrodoKEM-640-4x,FrodoKEM-640-8x,FrodoKEM-640-16x,FrodoKEM-976-1x,FrodoKEM-976-4x,FrodoKEM-976-8x,FrodoKEM-976-16x}
+]
+    \addplot [fill=green!60] table [x=KeyGen, meta=Label,y expr=\coordindex] {\testdata};   % "First" column against the data index
+    \addplot [fill=blue!60] table [x=Encaps, meta=Label,y expr=\coordindex] {\testdata};
+    \addplot [fill=red!60,postaction={
+        pattern=north east lines
+    }]table [x=*Decaps, meta=Label,y expr=\coordindex] {\testdata};
+    \addplot [fill=red!60]table [x=Decaps, meta=Label,y expr=\coordindex] {\testdata};
+    \legend{KeyGen,Encaps,*Decaps,Decaps}
+
+    \end{axis}
+
+    \end{tikzpicture}
+

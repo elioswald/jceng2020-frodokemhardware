@@ -1,0 +1,116 @@
+\section{Background and Related Work} \label{sec:related}
+
+FrodoKEM~\cite{frodokem} is a key encapsulation mechanism (KEM) based on the original standard lattice problem Learning With Errors (LWE)~\cite{Regev05}. FrodoKEM is a family of IND-CCA secure KEMs, the structure of which is based on a key exchange variant FrodoCCS~\cite{frodoccs}. FrodoKEM comes with two parameter sets FrodoKEM-640 and FrodoKEM-976, a summary of which is shown in Table \ref{tab:params}. FrodoKEM key generation is shown in Algorithm \ref{alg:keygen}, encapsulation is shown in Algorithm \ref{alg:encaps}, and decapsulation is shown in Algorithm \ref{alg:decaps}. The most computationally heavy operations in FrodoKEM are in Line 7 of Algorithm 1, Line 7 of Algorithm 2, and Line 11 of Algorithm 3, that is the matrix multiplication of two matrices $\mathbf{S}^\prime \leftarrow \mathbb{Z}^{\bar{m}\times n}$ and $\mathbf{A} \leftarrow \mathbb{Z}^{n\times n}$, sampled from the error sampler and PRNG, respectively. The LWE instance is then completed by adding an additional error from the error sampler. This is followed by a much smaller LWE operation, in which a random key is encoded. Finally, these ciphertexts are used to calculate a shared secret $(\mathbf{ss})$ via cSHAKE. The matrices generated heavily utilise PRNGs, suggested by the authors via AES or cSHAKE. The output of these algorithms have nice statistical properties, but the overhead required to achieve this is high.
+
+\begin{table}[tbhp]
+\caption{Implemented \textsf{FrodoKEM} parameter sets.}
+\label{tab:params}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+& \textsf{FrodoKEM-640} & \textsf{FrodoKEM-976}\\
+\hline
+Matrix Dimensions & $n=640,\bar{n}=\bar{m}=8$ & $n=976,\bar{n}=\bar{m}=8$\\
+%Dimension $(\bar{n},\bar{m})$ & 8 & 8\\
+%$D$ & 15 & 16\\
+Modulus $(q)$ & $2^{15}= 32768$ & $2^{16}=65536$\\
+%$B$ & 2 & 3\\
+%$\text{len}_\mathbf{A}$ & 128 & 128\\
+%$\text{len}_{\mu} = l$ & 128 & 192\\
+%$\text{len}_\mathbf{E}$ & 128 & 192\\
+%$\text{len}_\mathbf{z}$ & 128 & 192\\
+%$\text{len}_\mathbf{s}$ & 128 & 192\\
+%$\text{len}_\mathbf{k}$ & 128 & 192\\
+%$\text{len}_\mathbf{d}$ & 128 & 192\\
+%$\text{len}_\mathbf{ss}$ & 128 & 192\\
+%$\text{len}_{\chi}$ & 16 & 16\\
+Distribution $(\chi)$ & $\sigma=2.75$ & $\sigma=2.3$\\
+Security & 128 bits & 192 bits \\
+%$G$ & cSHAKE128($\cdot$, 384, 3) & cSHAKE256($\cdot$, 576, 3)\\
+%$F$ & cSHAKE128($\cdot$, 128, 7) & cSHAKE256($\cdot$, 192, 7)\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+ \begin{algorithm}
+%-caption{ FrodoKEM scheme \cite{lindner2010better}} \label{kem_spec}
+\caption{FrodoKEM key pair generation} \label{alg:keygen}
+   \begin{algorithmic}[1]
+  \Procedure{KeyGen}{$1^\ell$}
+    \State Generate random seeds $\mathbf{s} || \text{seed}_\mathbf{E} || \mathbf{z} \leftarrow_\$ U(\{0,1\}^{128})$
+        \State Generate pseudo-random seed $\text{seed}_\mathbf{A} \leftarrow H(\mathbf{z})$
+    \State Generate the matrix $\mathbf{A} \in \mathbb{Z}^{n \times n}_{q}$ via $\mathbf{A} \leftarrow \text{Frodo.Gen}(\text{seed}_\mathbf{A})$
+	\State $\mathbf{S} \leftarrow \text{Frodo.SampleMatrix}(\text{seed}_\mathbf{E},n,\bar{n},T_\chi,1)$
+	\State $\mathbf{E} \leftarrow \text{Frodo.SampleMatrix}(\text{seed}_\mathbf{E},n,\bar{n},T_\chi,2)$
+	%\State $\mathbf{E} \leftarrow \text{Frodo.SampleMatrix}(\text{seed}_\mathbf{E},n,\bar{n},T_\chi,2)$
+	\State Compute $\mathbf{B} \leftarrow \mathbf{AS} + \mathbf{E}$
+	%\State Compute $\mathbf{b} \leftarrow \text{Frodo.Pack}(\mathbf{B})$
+	\State \Return public key $pk \leftarrow \text{seed}_\mathbf{A} || \mathbf{B} $ and secret key $sk^\prime \leftarrow (\mathbf{s} || \text{seed}_\mathbf{A} || \mathbf{B}, \mathbf{S})$
+    \EndProcedure
+   \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[t]
+\caption{FrodoKEM encapsulation} \label{alg:encaps}
+  \begin{algorithmic}[1]
+    \Procedure{Encaps}{$pk=\text{seed}_\mathbf{A} || \mathbf{b}$}
+	\State Choose a uniformly random key $\mu \leftarrow U(\{0,1\}^{\text{len}_\mu})$
+	\State Generate pseudo-random values $\text{seed}_\mathbf{E} || \mathbf{k} || \mathbf{d} \leftarrow G(pk || \mu)$
+	\State Sample error $\mathbf{S}^\prime \leftarrow \text{Frodo.SampleMatrix}(\text{seed}_\mathbf{E},\bar{m},n,T_\chi,4)$
+	\State Sample error $\mathbf{E}^\prime \leftarrow \text{Frodo.SampleMatrix}(\text{seed}_\mathbf{E},\bar{m},n,T_\chi,5)$
+	 \State Generate $\mathbf{A} \in \mathbb{Z}^{n \times n}_{q}$ via $\mathbf{A} \leftarrow \text{Frodo.Gen}(\text{seed}_\mathbf{A})$
+	 \State Compute $\mathbf{B}^\prime \leftarrow \mathbf{S}^\prime \mathbf{A} + \mathbf{E}^\prime$
+	 \State Compute $\mathbf{c}_1 \leftarrow \text{Frodo.Pack}(\mathbf{B}^\prime)$
+	 \State Sample error $\mathbf{E}^{\prime\prime} \leftarrow \text{Frodo.SampleMatrix}(\text{seed}_\mathbf{E},\bar{m},\bar{n},T_\chi,6	)$
+	 \State Compute $\mathbf{B} \leftarrow \text{Frodo.Unpack}(\mathbf{b},n,\bar{n})$
+	 \State Compute $\mathbf{V} \leftarrow \mathbf{S}^\prime \mathbf{B} + \mathbf{E}^{\prime\prime}$
+	 \State Compute $\mathbf{C} \leftarrow \mathbf{V} + \text{Frodo.Encode}(\mu)$
+	 \State Compute $\mathbf{c}_2 \leftarrow \text{Frodo.Pack}(\mathbf{C})$
+	 \State Compute $\mathbf{ss} \leftarrow F(\mathbf{c}_1 || \mathbf{c}_2 || \mathbf{k} || \mathbf{d})$
+	\State \Return ciphertext $\mathbf{c}_1 || \mathbf{c}_2 || \mathbf{d}$ and shared secret $\mathbf{ss}$
+    \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{The \textsf{FrodoKEM} decapsulation} \label{alg:decaps}
+  \begin{algorithmic}[1]
+   \Procedure{Decaps}{$sk=(\mathbf{s} || \text{seed}_\mathbf{A} || \mathbf{b}, \mathbf{S}),\mathbf{c}_1 || \mathbf{c}_2 || \mathbf{d}$}
+        \State Compute $\mathbf{B}^\prime \leftarrow \text{Frodo.Unpack}(\mathbf{c}_1)$
+        \State Compute $\mathbf{C} \leftarrow \text{Frodo.Unpack}(\mathbf{c}_2)$
+        \State Compute $\mathbf{M} \leftarrow \mathbf{C} - \mathbf{B}^\prime \mathbf{S}$        
+        \State Compute $\mu^\prime \leftarrow \text{Frodo.Decode}(\mathbf{M})$   
+        \State Parse $pk \leftarrow \text{seed}_\mathbf{A} || \mathbf{b}$
+        \State Generate pseudo-random values $\text{seed}^\prime_\mathbf{E} || \mathbf{k}^\prime ||\mathbf{d}^\prime \leftarrow G(pk || \mu^\prime)$       
+       \State Sample error $\mathbf{S}^\prime \leftarrow \text{Frodo.SampleMatrix}(\text{seed}^\prime _\mathbf{E},\bar{m},n,T_\chi,4)$
+       \State Sample error $\mathbf{E}^\prime \leftarrow \text{Frodo.SampleMatrix}(\text{seed}^\prime _\mathbf{E},\bar{m},n,T_\chi,5)$
+        \State Generate $\mathbf{A} \in \mathbb{Z}^{n \times n}_{q}$ via $\mathbf{A} \leftarrow \text{Frodo.Gen}(\text{seed}_\mathbf{A})$
+        \State Compute $\mathbf{B}^{\prime\prime} \leftarrow \mathbf{S}^\prime \mathbf{A} + \mathbf{E}^\prime$
+        \State Sample error $\mathbf{E}^{\prime\prime} \leftarrow \text{Frodo.SampleMatrix}(\text{seed}^\prime_\mathbf{E},\bar{m},n,T_\chi,6    )$
+        \State Compute $\mathbf{B} \leftarrow \text{Frodo.Unpack}(\mathbf{b},n,\bar{n})$
+        \State Compute $\mathbf{V} \leftarrow \mathbf{S}^\prime \mathbf{B} + \mathbf{E}^{\prime\prime}$
+        \State Compute $\mathbf{C}^\prime \leftarrow \mathbf{V} + \text{Frodo.Encode}(\mu^\prime)$
+\State \textbf{if} $ \mathbf{B}^\prime || \mathbf{C} = \mathbf{B}^{\prime\prime} || \mathbf{C}^\prime$ and $\mathbf{d} = \mathbf{d}^\prime $ \textbf{return} $\mathbf{ss} \leftarrow F(\mathbf{c}_1 || \mathbf{c}_2 || \mathbf{k}^\prime || \mathbf{d})$
+	 \State \textbf{else} \textbf{return} $\mathbf{ss} \leftarrow F(\mathbf{c}_1 || \mathbf{c}_2 || \mathbf{s} || \mathbf{d})$
+    \EndProcedure
+\end{algorithmic}
+ \end{algorithm}
+
+Naehrig et al. \cite{frodokem} report the results of the implementation on a 64-bit ARM Cortex-A72 (with the best performance achieved by using OpenSSL AES implementation, that benefits from the NEON engine) and an Intel Core i7-6700 (x64 implementation using AVX2 and AES-NI instructions). Employing modular arithmetic ($q \leq 2^{16}$) results in using efficient and easy to implement single-precision
+arithmetic. The sampling of the error term (16 bits per sample) is done by inversion sampling using a small LUT corresponds to the discrete cumulative density functions (CDT sampling).
+
+There has been a number of software and hardware optimisations of FrodoKEM. Howe et al. \cite{howe2018standard} report both software and hardware designs for microcontroller and FPGA. The hardware design focuses on a plain implementation by using only one multiplier in order to fairly compare with previous work and the proposed software implementation. Due to their use of cSHAKE for PRNG, they have to pre-store a lot of the randomness into BRAM and then constantly update these values. Due to this, the implementations do not have the ability to increase the number of multipliers and uses large amounts of memory. So far there has been no investigation of side-channel analysis for FrodoKEM other than ensuring the implementations run in constant-time \cite{howe2018standard}.
+
+\subsection{Side-Channel Analysis}
+
+In their call for proposals, NIST specified that algorithms which can be protected against side-channel attacks in an effective and efficient way are to be preferred \cite{nistsca}. To provide a whole picture about the performance of a candidate, it is thus important to evaluate also the cost of implementing ``standard'' countermeasures against these attacks.
+
+In FrodoKEM specifications, cache and timing attacks can be mitigated using well known guidelines for implementing the algorithm. 
+For timing attacks, these include to avoiding use of data derived from the secret to access the addresses and in conditional branches.
+To counteract cache attacks it is necessary to ensure that all the operations depending on secrets are executed in constant-time.
+
+Power analysis attacks can be addressed using masking. Masking is one of the most widespread and better understood techniques to protect
+against passive side-channel attacks. In its most basic form, a mask is drawn uniformly from random and added to the secret. The resulting masked value, which is effectively a one-time-pad, and the mask are jointly called \emph{shares}: if taken
+singularly they are statistically independent from the secret, and they must be combined to obtain the secret back. Any operation that previously involved the secret has to be turned into an operation over its shares. As long as they are not combined, any leakage from them will be statistically independent of the secret too. In our context, we show how masking can easily applied to FrodoKEM at a very low cost. We therefore argue the overhead that a protected implementation of Frodo in hardware incurs is minimal, hence making it a strong candidate when side-channel analysis are a concern. The reason behind this is that the only operation using the secret matrix $\mathbf{S}$ is the computation of the matrix $\mathbf{M}$ as $\mathbf{C} - \mathbf{B}'\mathbf{S}$ during decapsulation. When $\mathbf{S}$ is split in two (or more) shares using addition modulo $q$, the above multiplication by $\mathbf{B}'$ can be simply applied to both shares independently. Results are then subtracted by $\mathbf{C}$ one-by-one, so that computations never depend on both
+shares simultaneously.
