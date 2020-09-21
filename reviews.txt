@@ -20,7 +20,6 @@ The title of the paper does not fit to its contents.
 
 A more accurate title would be "Replacing SHAKE with Trivium in FrodoKEM for better performance and scalability" or so.
 
-
 Detailed Feedback:
 
 - Section 2.1: The hardware implementation of XMSS by Wang et. al. is missing [1] in the related work.
