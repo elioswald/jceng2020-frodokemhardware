@@ -9,6 +9,8 @@ The paper is not well written. There are several grammatical errors, odd sentenc
 Floating figures should use top [t] placement; several times, there are short text parts in between figures, making the paper hard to read.
 Several times, lines are too long and leap into white space.
 
+Response: We have done a thorough proof reading of the paper to correct these errors.
+
 
 Title:
 
@@ -16,7 +18,11 @@ The title of the paper does not fit to its contents.
 
 - There is no design space exploration: There is no rationale, why Trivium was picked and not another hash function. This question is simply dismissed on page 5, right column, lines 6f. The only exploration vector is the degree of parallelism.
 
+Response: We have a new title which better suits the content of the paper.
+
 - The work is not on lattice-based KEMs in general as the title suggests but focuses on FrodoKEM. The suggested design changes are likely to apply to any other cryptographic scheme who's performance heavily depends on a hash function - but this question is not discussed in detail.
+
+Response: This is true, but the research can also be used on any standard LWE-based cryptographic scheme (in fact any scheme that requires matrix multiplication) which is why we state this in the title.
 
 A more accurate title would be "Replacing SHAKE with Trivium in FrodoKEM for better performance and scalability" or so.
 
@@ -24,39 +30,63 @@ Detailed Feedback:
 
 - Section 2.1: The hardware implementation of XMSS by Wang et. al. is missing [1] in the related work.
 
+Response: We restricted Table 1 to only include NIST PQC candidates.
+
 - Table 1: The unit of throughput is missing (last column).
+
+Response: This has now been corrected.
 
 - Section 3: There are several redundant text blocks in the beginning of the section (first two paragraphs).
 
 - Section 3, page 5, left column, lines 36-39, "Moreover, parallelisations was not possible for this design, as this would require a faster SHAKE design, increasing the area consumption by 3-8x [3].": Instead of using a faster SHAKE design, one could use several SHAKE instances (just as you do with Trivium) - at high cost, but likely feasible.
 
+Response: We add a sentence to cover this case as well.
+
 - Section 3.1: Is your design a new implementation or directly based on the code from reference [9]?
+
+Response: The designs here are inspired by [9] but the code is new.
 
 - Section 3.1, matrix operations (page 6, lines 20-27, left and right column): You are lacking references to prior work in matrix-matrix and matrix-vector multiplication in hardware as well as parallelization techniques for matrix operations. These are well known and well researched areas.
 
+Response: We added a sentence for this with some references.
+
 - Section 3.1, page 6, lines 38-40: You replaced the PRNG(s) with Trivium; why do you still keep a SHAKE core for calculating the shared secret? Why not go for Trivium altogether?
+
+Response: Using Trivium/SHAKE for generating the randomness constitutes >>90% of its overall use, which was the motivation for this paper and using Trivium here we see significant savings. By using a small SHAKE core here we are more complient with the FrodoKEM specifications and moreover the calculation of the shared secret is not in the critical path of the hardware design so we are thus able to start the next KEM operations (which would not be possible if we wanted to use the Triviums already there).
 
 - Section 3.2: You claim that your first-order masking does not affect runtime - but in my understanding, you need two parallel instances for that. Therefore, either time or area is affected by your masking approach. Please clarify.
 
+Response: Yes, as it's parallelised the area is affected but we can do this 'for free' because it already exists in hardware for use in other parts of the KEM algorithms. We added a sentence to make this more clear.
+
 - Section 4: Please discuss how your approach and parallelization affects the time-area product; add the time-area product to the tables.
+
+Response: Thanks for this idea, it has now been added.
 
 - Section 4: Please add a direct comparison in regards to throughput, latency, and area consumption between Trivium and the two SHAKE versions that are discussed.
 
+Response: We added another paragraph using the area-time metric to further compare the Trivium and SHAKE versions.
+
 - Section 4: Please describe your implementations with and without BRAM more clearly. What alternative resources are used when BRAM is avoided? LUT-memory? Registers?
+
+Response: We add a footnote in the results section to explain how we synthesised the hardware design to ensure no BRAMs were used.
 
 - Section 4, page 7, right column, lines 56f - "For decapsulation, we save between 1.6x and 2.6x slices when BRAM is used...": Be precise - is it more or less slices?
 
+Response: Thanks, this has now been corrected.
+
 - Section 5: The first sentence is incorrect; due to your modifications, you are not evaluating the performance of FrodoKEM as submitted to NIST.
+
+Response: Thanks, this has now been corrected.
 
 - Section 5: The contents of this section are entirely redundant.
 
+Response: The purpose of this section is to conclude and summary the contributions of the paper.
+
 In Section 1 (page 2, left column, line 43) and Section 3 (page 5,lines 51-56), you claim that by replacing SHAKE with Trivium the security of FrodoKEM still holds. This claim needs a proof.
 
+Response: We believe this may be out of the scope for this paper. We aimed to investigate the performance potential of FrodoKEM with a fast PRNG in hardware.
 
 [1] https://eprint.iacr.org/2018/1225
-
-
-
 
 Reviewer #2: This paper proposes a more efficient and high(er) throughput design for FRODOKEM, a NIST post-quantum standardization candidate (at Round-2). The authors have two main extensions to the prior work (some include the authors of this journal). First, they notice that one of the key drawbacks of the prior designs were using an AES or SHAKE cipher based designs for random number generators. The authors instead use TRIVIUM, which is known to be more hardware efficient. The authors then accelerate the hardware design using parallel multipliers for the other compute bottleneck of matrix multiplication with relatively straightforward methods. The second extension is using masking to prevent first-order side-channel attacks. The design work is intensive despite being fairly obvious extensions. The editorial quality is high. But there are several critical issues described below causing me to request a major revision.
 
