@@ -1,0 +1,137 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{amiet2018fpga}
+Amiet, D., Curiger, A., Zbinden, P.: {FPGA-based Accelerator for Post-Quantum
+  Signature Scheme SPHINCS-256}. IACR Transactions on Cryptographic Hardware
+  and Embedded Systems pp. 18--39 (2018)
+
+\bibitem{cryptoeprint:2019:1086}
+Bernstein, D.J., Hülsing, A., Kölbl, S., Niederhagen, R., Rijneveld, J.,
+  Schwabe, P.: The sphincs+ signature framework. Cryptology ePrint Archive,
+  Report 2019/1086 (2019), \url{https://eprint.iacr.org/2019/1086}
+
+\bibitem{bertoni2012keccak}
+Bertoni, G., Daemen, J., Peeters, M., Van~Assche, G., Van~Keer, R.: Keccak
+  implementation overview. URL: http://keccak. neokeon.
+  org/Keccak-implementation-3.2. pdf  (2012)
+
+\bibitem{frodoccs}
+Bos, J.W., Costello, C., Ducas, L., Mironov, I., Naehrig, M., Nikolaenko, V.,
+  Raghunathan, A., Stebila, D.: Frodo: Take off the ring! practical,
+  quantum-secure key exchange from {LWE}. In: Proceedings of the 2016 {ACM}
+  {SIGSAC} Conference on Computer and Communications Security, Vienna, Austria,
+  October 24-28, 2016. pp. 1006--1018 (2016)
+
+\bibitem{bos2018assessing}
+Bos, J.W., Friedberger, S., Martinoli, M., Oswald, E., Stam, M.: Assessing the
+  feasibility of single trace power analysis of frodo. In: International
+  Conference on Selected Areas in Cryptography. pp. 216--234. Springer (2018)
+
+\bibitem{cryptoeprint:2018:1116}
+Bos, J.W., Friedberger, S., Martinoli, M., Oswald, E., Stam, M.: Fly, you fool!
+  faster frodo for the arm cortex-m4. Cryptology ePrint Archive, Report
+  2018/1116 (2018), \url{https://eprint.iacr.org/2018/1116}
+
+\bibitem{de2008trivium}
+De~Canniere, C., Preneel, B.: Trivium. In: New Stream Cipher Designs, pp.
+  244--266. Springer (2008)
+
+\bibitem{howe2018practical}
+Howe, J., Khalid, A., Rafferty, C., Regazzoni, F., O'Neill, M.: On practical
+  discrete gaussian samplers for lattice-based cryptography. IEEE Transactions
+  on Computers  \textbf{67}(3),  322--334 (2018)
+
+\bibitem{howe2018standard}
+Howe, J., Oder, T., Krausz, M., G{\"u}neysu, T.: Standard lattice-based key
+  encapsulation on embedded devices. IACR Transactions on Cryptographic
+  Hardware and Embedded Systems pp. 372--393 (2018)
+
+\bibitem{ISO}
+{Information technology — Security techniques — Lightweight cryptography
+  — Part 3: Stream ciphers}. Standard, International Organization for
+  Standardization, Geneva, CH (2012)
+
+\bibitem{jang2002area}
+Jang, J.w., Choi, S., Prasanna, V.: Area and time efficient implementations of
+  matrix multiplication on fpgas. In: 2002 IEEE International Conference on
+  Field-Programmable Technology, 2002.(FPT). Proceedings. pp. 93--100. IEEE
+  (2002)
+
+\bibitem{kales2020efficient}
+Kales, D., Ramacher, S., Rechberger, C., Walch, R., Werner, M.: Efficient fpga
+  implementations of lowmc and picnic. In: Cryptographers’ Track at the RSA
+  Conference. pp. 417--441. Springer (2020)
+
+\bibitem{pqm4}
+Kannwischer, M.J., Rijneveld, J., Schwabe, P., Stoffelen, K.: {pqm4: Testing
+  and Benchmarking NIST PQC on ARM Cortex-M4}. NIST's Second PQC
+  Standardization Conference (2019), \url{https://eprint.iacr.org/2019/844}
+
+\bibitem{koziel2018high}
+Koziel, B., Azarderakhsh, R., Kermani, M.M.: A high-performance and scalable
+  hardware architecture for isogeny-based cryptography. IEEE Transactions on
+  Computers  \textbf{67}(11),  1594--1609 (2018)
+
+\bibitem{cryptoeprint:2017:690}
+Kuo, P.C., Li, W.D., Chen, Y.W., Hsu, Y.C., Peng, B.Y., Cheng, C.M., Yang,
+  B.Y.: High performance post-quantum key exchange on {FPGAs}. Cryptology
+  ePrint Archive, Report 2017/690 (2017),
+  \url{https://eprint.iacr.org/2017/690}
+
+\bibitem{frodokem}
+Naehrig, M., Alkim, E., Bos, J., Ducas, L., Easterbrook, K., LaMacchia, B.,
+  Longa, P., Mironov, I., Nikolaenko, V., Peikert, C., Raghunathan, A.,
+  Stebila, D.: Frodokem. Tech. rep., {N}ational {I}nstitute of {S}tandards and
+  {T}echnology (2017), available at
+  \url{https://csrc.nist.gov/projects/post-quantum-cryptography/round-1-submissions}
+
+\bibitem{nistpq}
+NIST: Post-quantum crypto project.
+  \url{http://csrc.nist.gov/groups/ST/post-quantum-crypto/} (2016)
+
+\bibitem{nistsca}
+NIST: Submission requirements and evaluation criteria for the post-quantum
+  cryptography standardization process.
+  \url{https://csrc.nist.gov/csrc/media/projects/post-quantum-cryptography/documents/call-for-proposals-final-dec-2016.pdf}
+  (2016)
+
+\bibitem{oder2017implementing}
+Oder, T., G{\"u}neysu, T.: Implementing the {NewHope}-simple key exchange on
+  low-cost {FPGAs}. Progress in Cryptology--LATINCRYPT  \textbf{2017} (2017)
+
+\bibitem{qasim2008proposed}
+Qasim, S.M., Abbasi, S.A., Almashary, B.: A proposed fpga-based parallel
+  architecture for matrix multiplication. In: APCCAS 2008-2008 IEEE Asia
+  Pacific Conference on Circuits and Systems. pp. 1763--1766. IEEE (2008)
+
+\bibitem{Regev05}
+Regev, O.: On lattices, learning with errors, random linear codes, and
+  cryptography. In: Proceedings of the 37th Annual {ACM} Symposium on Theory of
+  Computing, Baltimore, MD, USA, May 22-24, 2005. pp. 84--93 (2005).
+  \doi{10.1145/1060590.1060603},
+  \url{http://doi.acm.org/10.1145/1060590.1060603}
+
+\bibitem{cryptoeprint:2019:568}
+Roy, D.B., Mukhopadhyay, D.: {Post Quantum ECC on FPGA Platform}. Cryptology
+  ePrint Archive, Report 2019/568 (2019),
+  \url{https://eprint.iacr.org/2019/568}
+
+\bibitem{cryptoeprint:2019:685}
+Saarinen, M.J.O.: Exploring nist lwc/pqc synergy with r5sneik: How sneik 1.1
+  algorithms were designed to support round5. Cryptology ePrint Archive, Report
+  2019/685 (2019), \url{https://eprint.iacr.org/2019/685}
+
+\bibitem{Shor}
+Shor, P.W.: Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer. SIAM J. Comput.  \textbf{26}(5),
+  1484--1509 (Oct 1997)
+
+\bibitem{wang2018fpga}
+Wang, W., Szefer, J., Niederhagen, R.: {FPGA-based Niederreiter cryptosystem
+  using binary Goppa codes}. In: International Conference on Post-Quantum
+  Cryptography. pp. 77--98. Springer (2018)
+
+\end{thebibliography}

@@ -1,6 +1,6 @@
 \section{Background and Related Work} \label{sec:related}
   
-In this section we provide some background on previous hardware implementations post-quantum cryptographic schemes, focusing on those which are candidates of NIST's standardization effort. We will elaborate more FrodoKEM and its implementations as well as recalling the principles of masking.
+In this section we provide some background on previous hardware implementations post-quantum cryptographic schemes, focusing on those which are candidates of NIST's standardization effort. We will also elaborate more on FrodoKEM and its implementations as well as recalling the principles of masking.
 
 \subsection{Previous post-quantum hardware implementations}
 
@@ -14,7 +14,7 @@ In order to provide a reference point on the state-of-the-art in hardware design
 \noindent\makebox[\textwidth]{
 \begin{tabular}{c l l N{5}{0} N{5}{0} N{5}{0} N{3}{0} N{3}{0} N{3}{0} N{5}{0}}
 \hline \Tstrut
-&  {\bf Cryptographic Implementation} 
+&  {\bf Crypto. Implementation} 
 &  {\bf Device}
 &  \multicolumn{1}{r}{\bf LUT} 
 &  \multicolumn{1}{r}{\bf FF} 
@@ -22,9 +22,8 @@ In order to provide a reference point on the state-of-the-art in hardware design
 &  \multicolumn{1}{r}{\bf DSP} 
 &  \multicolumn{1}{r}{\bf BRAM} 
 &  \multicolumn{1}{r}{\bf MHz} 
-&  \multicolumn{1}{r}{\bf Thr-Put} \\
+&  \multicolumn{1}{r}{\bf Ops/Sec} \\
 \hline \Tstrut
-\parbox[t]{5mm}{\multirow{1}{*}{\rotatebox[origin=c]{90}{H}}} & \textsf{SPHINCS-256} (Total) \cite{amiet2018fpga} & Kintex-7 & 19067 & 3132 & 7306 & 3 & 36 & 525 & 654 \\ \hline 	\Tstrut
  \parbox[t]{5mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{Code}}} & \textsf{Niederreiter} KeyGen \cite{wang2018fpga} & Stratix-V & \multicolumn{1}{c}{$-$} & \multicolumn{1}{c}{$-$} & 39122 & \multicolumn{1}{c}{$-$} & 827 & 230 & 75 \\
 & \textsf{Niederreiter} Encrypt \cite{wang2018fpga} & Stratix-V & \multicolumn{1}{c}{$-$} & 6977 & 4276 & \multicolumn{1}{c}{$-$} & 0 & 448 & 50000 \\
 & \textsf{Niederreiter} Decrypt \cite{wang2018fpga} & Stratix-V & \multicolumn{1}{c}{$-$} & 48050 & 20815 & \multicolumn{1}{c}{$-$} & 88 & 290 & 12500 \\ 	
@@ -40,10 +39,11 @@ In order to provide a reference point on the state-of-the-art in hardware design
 %& \textsf{Round5} (All) (SoC) [PQShield]  & Art-7  & 7168 & 3337 & 2344 & 0 & \multicolumn{1}{c}{$-$} & 100 & \multicolumn{1}{c}{$-$} \\ \cline{2-10} \Tstrut
 & \textsf{FrodoKEM}-640 KeyGen \cite{howe2018standard} & Artix-7 & 3771 & 1800 & 1035 & 1 & 6 & 167 & 51 \\
 & \textsf{FrodoKEM}-640 Encaps \cite{howe2018standard}  & Artix-7 & 6745 & 3528 & 1855 & 1 & 11 & 167 & 51 \\
-& \textsf{FrodoKEM}-640 Decaps \cite{howe2018standard}  & Artix-7 & 7220 & 3549 & 1992 & 1 & 16 & 162 & 49 \\ \hline \Tstrut
+& \textsf{FrodoKEM}-640 Decaps \cite{howe2018standard}  & Artix-7 & 7220 & 3549 & 1992 & 1 & 16 & 162 & 49 \\ \hline \Tstrut \Tstrut
+\parbox[t]{5mm}{\multirow{1}{*}{\rotatebox[origin=c]{90}{H}}} & \textsf{SPHINCS-256} (Total) \cite{amiet2018fpga} & Kintex-7 & 19067 & 3132 & 7306 & 3 & 36 & 525 & 654 \\ \hline 	\Tstrut
  \parbox[t]{5mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{OWF}}} & \textsf{Picnic}-L1 Sign \cite{kales2020efficient} & Artix-7 & 76472 & 21061 & \multicolumn{1}{c}{$-$} & \multicolumn{1}{c}{$-$} & 53 & 125 & 3994 \\
-& \textsf{Picnic}-L1 Verify \cite{kales2020efficient} & Artix-7 & 68614 & 16821 & \multicolumn{1}{c}{$-$} & \multicolumn{1}{c}{$-$} & 34 & 125 & 4223 \\ 	
-\hline
+& \textsf{Picnic}-L1 Verify \cite{kales2020efficient} & Artix-7 & 68614 & 16821 & \multicolumn{1}{c}{$-$} & \multicolumn{1}{c}{$-$} & 34 & 125 & 4223 \\
+\hline \Bstrut
 \end{tabular}}%}
 \end{center}
 \end{table*}

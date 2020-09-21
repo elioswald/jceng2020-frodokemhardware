@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: splncs04.bst
+Database file #1: bibliography.bib
+Warning--string name "october" is undefined
+--line 69 of file bibliography.bib
+Warning--empty author in ISO
+You've used 25 entries,
+            2850 wiz_defined-function locations,
+            734 strings with 10047 characters,
+and the built_in function-call counts, 14400 in all, are:
+= -- 1191
+> -- 509
+< -- 17
++ -- 212
+- -- 184
+* -- 887
+:= -- 1834
+add.period$ -- 39
+call.type$ -- 25
+change.case$ -- 193
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 1236
+empty$ -- 1286
+format.name$ -- 203
+if$ -- 3148
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 252
+newline$ -- 81
+num.names$ -- 48
+pop$ -- 536
+preamble$ -- 1
+purify$ -- 143
+quote$ -- 0
+skip$ -- 363
+stack$ -- 0
+substring$ -- 771
+swap$ -- 671
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 100
+warning$ -- 1
+while$ -- 112
+width$ -- 27
+write$ -- 262
+(There were 2 warnings)
