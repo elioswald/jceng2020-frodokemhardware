@@ -1,0 +1,96 @@
+COMMENTS TO THE AUTHOR:
+
+Reviewer #1: The paper describes a modification to the FrodoKEM scheme using Trivium instead of SHAKE as PRNG that gives a significant speedup for a hardware implementation.
+
+
+Editorial:
+
+The paper is not well written. There are several grammatical errors, odd sentences, and strange phrases. Often, there is a mix-up between singular and plural between article, noun, and verb (see, e.g., page 2, left column, lines 31 and 32). Furthermore, there are frequently words missing in sentences (see, e.g., page 2, left column, line 59). The authors must apply proof reading; this is not the job a the reviewers.
+Floating figures should use top [t] placement; several times, there are short text parts in between figures, making the paper hard to read.
+Several times, lines are too long and leap into white space.
+
+
+Title:
+
+The title of the paper does not fit to its contents.
+
+- There is no design space exploration: There is no rationale, why Trivium was picked and not another hash function. This question is simply dismissed on page 5, right column, lines 6f. The only exploration vector is the degree of parallelism.
+
+- The work is not on lattice-based KEMs in general as the title suggests but focuses on FrodoKEM. The suggested design changes are likely to apply to any other cryptographic scheme who's performance heavily depends on a hash function - but this question is not discussed in detail.
+
+A more accurate title would be "Replacing SHAKE with Trivium in FrodoKEM for better performance and scalability" or so.
+
+Detailed Feedback:
+
+- Section 2.1: The hardware implementation of XMSS by Wang et. al. is missing [1] in the related work.
+
+- Table 1: The unit of throughput is missing (last column).
+
+- Section 3: There are several redundant text blocks in the beginning of the section (first two paragraphs).
+
+- Section 3, page 5, left column, lines 36-39, "Moreover, parallelisations was not possible for this design, as this would require a faster SHAKE design, increasing the area consumption by 3-8x [3].": Instead of using a faster SHAKE design, one could use several SHAKE instances (just as you do with Trivium) - at high cost, but likely feasible.
+
+- Section 3.1: Is your design a new implementation or directly based on the code from reference [9]?
+
+- Section 3.1, matrix operations (page 6, lines 20-27, left and right column): You are lacking references to prior work in matrix-matrix and matrix-vector multiplication in hardware as well as parallelization techniques for matrix operations. These are well known and well researched areas.
+
+- Section 3.1, page 6, lines 38-40: You replaced the PRNG(s) with Trivium; why do you still keep a SHAKE core for calculating the shared secret? Why not go for Trivium altogether?
+
+- Section 3.2: You claim that your first-order masking does not affect runtime - but in my understanding, you need two parallel instances for that. Therefore, either time or area is affected by your masking approach. Please clarify.
+
+- Section 4: Please discuss how your approach and parallelization affects the time-area product; add the time-area product to the tables.
+
+- Section 4: Please add a direct comparison in regards to throughput, latency, and area consumption between Trivium and the two SHAKE versions that are discussed.
+
+- Section 4: Please describe your implementations with and without BRAM more clearly. What alternative resources are used when BRAM is avoided? LUT-memory? Registers?
+
+- Section 4, page 7, right column, lines 56f - "For decapsulation, we save between 1.6x and 2.6x slices when BRAM is used...": Be precise - is it more or less slices?
+
+- Section 5: The first sentence is incorrect; due to your modifications, you are not evaluating the performance of FrodoKEM as submitted to NIST.
+
+- Section 5: The contents of this section are entirely redundant.
+
+In Section 1 (page 2, left column, line 43) and Section 3 (page 5,lines 51-56), you claim that by replacing SHAKE with Trivium the security of FrodoKEM still holds. This claim needs a proof.
+
+
+[1] https://eprint.iacr.org/2018/1225
+
+
+
+
+Reviewer #2: This paper proposes a more efficient and high(er) throughput design for FRODOKEM, a NIST post-quantum standardization candidate (at Round-2). The authors have two main extensions to the prior work (some include the authors of this journal). First, they notice that one of the key drawbacks of the prior designs were using an AES or SHAKE cipher based designs for random number generators. The authors instead use TRIVIUM, which is known to be more hardware efficient. The authors then accelerate the hardware design using parallel multipliers for the other compute bottleneck of matrix multiplication with relatively straightforward methods. The second extension is using masking to prevent first-order side-channel attacks. The design work is intensive despite being fairly obvious extensions. The editorial quality is high. But there are several critical issues described below causing me to request a major revision.
+
+
+The authors argue that TRIVIUM provides similar security as of AES. But I believe TRIVIUM provides 80-bit security pre-quantum and potentially even lower security under quantum computer attacks. How is that addressing NIST's security levels? There is no discussion of these aspects. Also, despite NIST's recommendations, the authors use TRIVIUM and justify this based on other's work (some written by these authors) and that NIST's idea may change, which are controversial claims. But this second issue is less severe than my first criticism.
+
+
+The proposed masking scheme is not validated and is arguably vulnerable. The split shares are combined in Step 5 of Algorithm 3, in a direct/unprotected manner. Therefore, the attacker can target this part where the shares are combined to directly correlate power measurements to the secret key. Moreover, there is no validation of side-channel security, e.g., through TVLA. This is a critical issue as a similar line of work using additive homomorphism (see Reparaz et al. PQ-2016) has shown a surprising vulnerability despite masking.
+
+
+Related to side-channel discussions, the work in [5], discusses single-trace side-channel attacks, which cannot be mitigated with masking. The authors omit this aspect of the work and do not discuss/demonstrate potential countermeasures against it. I would also add the work by Aysu et al. HOST-18, which forms the basis of [5] applied to an earlier version of Frodo.
+
+
+The work's impact can be significantly enhanced by showing the gains at a system level. The original Frodo paper CCS 2016, demonstrate the impact Frodo on an HTTPS/TLS connection. Estimating from their numbers, what would be an expected gain on the overall protocol with the proposed acceleration techniques?
+
+
+The community can greatly benefit from an open-source design of this work. Do the authors plan on sharing their codes after a publication?
+
+
+
+Reviewer #3: The authors have presented a high-throughput FPGA implementation of Frodo CCA-KEM. Their proposed design uses parallel multipliers to speed up matrix multiplication and Trivium PRNG for fast sampling in low area. The decapsulation step is also masked against power side-channel attacks. Overall speedup of 14-16x is achieved compared to previous work.
+
+(1) Section 2.2 - "FrodoKEM comes with two parameter sets FrodoKEM-640 and FrodoKEM-976" - Since Round 2 last year, Frodo offers a third parameter set Frodo-1344. Can the proposed design be scaled for this? Any particular reason this was not evaluated, such as resource limitations on the Artix-7 FPGA?
+
+(2) Section 2.2 - "The matrices generated heavily utilize PRNGs, suggested by the authors via AES or SHAKE. The output of these algorithms have nice statistical properties, but the overhead required to achieve this is high" - What are the statistical properties required from the PRNG used for sampling in Frodo? Does Trivium not have those statistical properties?
+
+(3) The side-channel sections (Sections 2.4 and 3.2) need to be organized better. Please provide the masked version of M = C - B'S in the Algorithm format. Also, please provide a pictorial explanation of how multiplication by shares of S is performed in parallel by the proposed design without affecting throughput and how the row-column combinations are scheduled to prevent leakage.
+
+(4) Section 4 - "When compared to cSHAKE, the PRNG previously used in literature, Trivium (the PRNG we propose to use), occupies 4.5x less area on the FPGA (measured in slices)" - cSHAKE produces 1344 or 1088 bits per round (depending on whether SHAKE-128 or SHAKE-256 is used) but each Trivium core in the proposed design produces 32 bits per round. So, when using 4 / 8 / 16 multipliers, which corresponds to 2 / 4 / 8 Trivium cores, the total number of bits is much less than cSHAKE but the area becomes equal to cSHAKE for 4 Trivium cores and greater than cSHAKE for 8 Trivium cores. Then, what is the advantage of using Trivium instead of cSHAKE when using many parallel multipliers?
+
+(5) Could you please compare the resource consumption of the Frodo implementation with 4 / 8 / 16 multipliers with cSHAKE + AES? Tables 3, 4, 5 compare the proposed design only with the single multiplier case. It is more important to understand the parallel multiplier case. Since cSHAKE and AES produce greater number of bits per round, it will probably still need one cSHAKE core and 1 or 2 AES cores. Right now, it is difficult to extrapolate the overall area requirement from Table 6 alone.
+
+(6) Is step 14 in Algorithm 3 (the FO transform comparison step) implemented in constant time? A recent paper (published after this manuscript was submitted) uses timing leakage in this step to attack software implementation of Frodo CCA: Guo et al., "A key-recovery timing attack on post-quantum primitives using the Fujisaki-Okamoto transformation and its application on FrodoKEM", ePrint 2020/743. Is the proposed design secure against this attack?
+
+(7) To make the side-channel section more complete, could you please provide a brief outline of how one can go about verifying the effectiveness of the proposed masking scheme?
+
+__
